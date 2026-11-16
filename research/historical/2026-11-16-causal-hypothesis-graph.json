@@ -1,0 +1,889 @@
+{
+  "schema": "routin.causal_hypotheses.v1",
+  "status": "hypothesis_graph_not_validated_causal_model",
+  "paper_ids_in_report": true,
+  "nodes": [
+    {
+      "id": "auto_efficiency",
+      "definition": "Administrative efficiency from authorized automation"
+    },
+    {
+      "id": "available_slack",
+      "definition": "Uncommitted capacity after existing work and buffers"
+    },
+    {
+      "id": "new_commitments",
+      "definition": "Accepted new obligations with downstream dependencies"
+    },
+    {
+      "id": "future_workload",
+      "definition": "Expected workload including preparation and follow-ups"
+    },
+    {
+      "id": "overload_risk",
+      "definition": "Probability of infeasible obligation portfolio"
+    },
+    {
+      "id": "unplanned_interruptions",
+      "definition": "Interruptions caused by urgent work and coordination"
+    },
+    {
+      "id": "resumption_cost",
+      "definition": "Time and quality cost of returning to interrupted work"
+    },
+    {
+      "id": "plan_churn",
+      "definition": "Displacement of previously accepted work blocks"
+    },
+    {
+      "id": "accepted_plan_trust",
+      "definition": "Ability of user to rely on previously approved schedules"
+    },
+    {
+      "id": "growth_time",
+      "definition": "Usable time for explicitly chosen long-term goals"
+    },
+    {
+      "id": "goal_progress",
+      "definition": "Meaningful progress on user-chosen goals"
+    },
+    {
+      "id": "growth_visibility",
+      "definition": "Frequency of growth opportunities surfaced to the user"
+    },
+    {
+      "id": "growth_interaction",
+      "definition": "Observed user interactions with growth-related suggestions"
+    },
+    {
+      "id": "inferred_growth_preference",
+      "definition": "Model-estimated relative preference for growth activities"
+    },
+    {
+      "id": "work_visibility",
+      "definition": "Frequency of professional work surfaced to the user"
+    },
+    {
+      "id": "work_interaction",
+      "definition": "Observed user interactions with work-related suggestions"
+    },
+    {
+      "id": "inferred_work_preference",
+      "definition": "Model-estimated preference for work activities"
+    },
+    {
+      "id": "user_oversight",
+      "definition": "Manual review and correction required to supervise AI"
+    },
+    {
+      "id": "critical_omissions",
+      "definition": "Consequential responsibilities surfaced too late or never"
+    },
+    {
+      "id": "manual_checking",
+      "definition": "Extra user checking due to trust failures"
+    },
+    {
+      "id": "source_freshness",
+      "definition": "Validated coverage and recency of integrated observations"
+    },
+    {
+      "id": "false_non_events",
+      "definition": "Incorrect assertions about missing responses or actions"
+    },
+    {
+      "id": "unnecessary_followups",
+      "definition": "Socially unnecessary outreach and reminders"
+    },
+    {
+      "id": "social_coordination_work",
+      "definition": "Communication and relationship repair overhead"
+    },
+    {
+      "id": "automated_skill_work",
+      "definition": "Delegation of tasks the user wants to practice"
+    },
+    {
+      "id": "deliberate_practice",
+      "definition": "Hands-on effort toward skills the user chooses to develop"
+    },
+    {
+      "id": "independent_competence",
+      "definition": "User ability to perform skills without assistance"
+    },
+    {
+      "id": "agent_dependency",
+      "definition": "Practical reliance on AI to perform formerly practiced skills"
+    },
+    {
+      "id": "preference_conflicts",
+      "definition": "Disagreement between explicit goals and inferred habits"
+    },
+    {
+      "id": "temporary_disruptions",
+      "definition": "One-time crises or exceptional workload periods"
+    },
+    {
+      "id": "false_goal_retirement",
+      "definition": "Inference that temporary skipping means a goal is abandoned"
+    },
+    {
+      "id": "request_negotiation",
+      "definition": "Scope/date negotiation before accepting new obligations"
+    },
+    {
+      "id": "source_reconciliation",
+      "definition": "Explicit repair/reconciliation of source observations"
+    },
+    {
+      "id": "verified_execution",
+      "definition": "Externally confirmed postconditions of authorized actions"
+    },
+    {
+      "id": "false_completion",
+      "definition": "Incorrect designation that a responsibility is complete"
+    },
+    {
+      "id": "attention_suppression",
+      "definition": "Policy withholding items from immediate user attention"
+    },
+    {
+      "id": "resumption_support",
+      "definition": "Optional context-preserving return-to-work plan"
+    },
+    {
+      "id": "schedule_stability_policy",
+      "definition": "Local repairs and penalty for unnecessary plan changes"
+    },
+    {
+      "id": "explicit_aspirations",
+      "definition": "User-declared goals and desired identity, independent of behavior"
+    },
+    {
+      "id": "exposure_logging",
+      "definition": "Logged candidate sets, surfaced items and selection mechanism"
+    },
+    {
+      "id": "temporal_belief_revision",
+      "definition": "Versioned preference scope, supersession and invalidation"
+    },
+    {
+      "id": "critical_guardrails",
+      "definition": "Independent safeguards for consequential last-safe interventions"
+    },
+    {
+      "id": "demand_for_automation",
+      "definition": "Perceived need for increasing assistant automation"
+    },
+    {
+      "id": "replan_events",
+      "definition": "State changes that trigger schedule recomputation"
+    },
+    {
+      "id": "manual_schedule_edits",
+      "definition": "User corrections to changed schedules"
+    },
+    {
+      "id": "user_goal_displacement",
+      "definition": "Unexpected loss of protected personal goal opportunities"
+    }
+  ],
+  "edges": [
+    {
+      "from": "auto_efficiency",
+      "to": "available_slack",
+      "sign": "+",
+      "status": "engineering_hypothesis",
+      "source_ids": [
+        "25"
+      ],
+      "conditional_on": "time saved is not instantly reallocated",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "available_slack",
+      "to": "new_commitments",
+      "sign": "+",
+      "status": "behavioral_hypothesis",
+      "source_ids": [
+        "25"
+      ],
+      "conditional_on": "user or agent treats freed capacity as a reason to accept additional work",
+      "countermeasure": "request_negotiation",
+      "validation": "Observe whether more capacity creates more obligations"
+    },
+    {
+      "from": "new_commitments",
+      "to": "future_workload",
+      "sign": "+",
+      "status": "definitional",
+      "source_ids": [
+        "1",
+        "3"
+      ],
+      "conditional_on": "accepted request entails preparation, follow-up and hidden work",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "future_workload",
+      "to": "available_slack",
+      "sign": "-",
+      "status": "operational_hypothesis",
+      "source_ids": [
+        "4",
+        "5"
+      ],
+      "conditional_on": "time horizon and task durations are comparable",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "future_workload",
+      "to": "overload_risk",
+      "sign": "+",
+      "status": "model_hypothesis",
+      "source_ids": [
+        "4",
+        "5"
+      ],
+      "conditional_on": "forecast distribution and constraints are calibrated",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "overload_risk",
+      "to": "unplanned_interruptions",
+      "sign": "+",
+      "status": "behavioral_hypothesis",
+      "source_ids": [
+        "14"
+      ],
+      "conditional_on": "urgent work causes coordination and switching",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "unplanned_interruptions",
+      "to": "resumption_cost",
+      "sign": "+",
+      "status": "empirical_mechanism",
+      "source_ids": [
+        "14"
+      ],
+      "conditional_on": "interruption under time pressure",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "resumption_support",
+      "to": "resumption_cost",
+      "sign": "-",
+      "status": "empirical_mechanism",
+      "source_ids": [
+        "14"
+      ],
+      "conditional_on": "capsule is contextually useful, not compulsory",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "unplanned_interruptions",
+      "to": "plan_churn",
+      "sign": "+",
+      "status": "design_hypothesis",
+      "source_ids": [
+        "5"
+      ],
+      "conditional_on": "schedule policy responds with replanning",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "plan_churn",
+      "to": "accepted_plan_trust",
+      "sign": "-",
+      "status": "design_hypothesis",
+      "source_ids": [
+        "5"
+      ],
+      "conditional_on": "user notices schedule changes",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "accepted_plan_trust",
+      "to": "manual_checking",
+      "sign": "-",
+      "status": "design_hypothesis",
+      "source_ids": [
+        "15"
+      ],
+      "conditional_on": "user can rely on plan and recover context",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "schedule_stability_policy",
+      "to": "plan_churn",
+      "sign": "-",
+      "status": "engineering_hypothesis",
+      "source_ids": [
+        "5"
+      ],
+      "conditional_on": "baseline can be repaired locally",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "request_negotiation",
+      "to": "new_commitments",
+      "sign": "-",
+      "status": "design_hypothesis",
+      "source_ids": [
+        "1",
+        "5"
+      ],
+      "conditional_on": "nonessential/infeasible requests are renegotiable",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "growth_time",
+      "to": "goal_progress",
+      "sign": "+",
+      "status": "behavioral_hypothesis",
+      "source_ids": [
+        "17",
+        "18",
+        "19"
+      ],
+      "conditional_on": "time is actually used for relevant practice",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "future_workload",
+      "to": "growth_time",
+      "sign": "-",
+      "status": "design_hypothesis",
+      "source_ids": [
+        "17",
+        "18"
+      ],
+      "conditional_on": "growth time is not treated as binding and gets displaced",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "work_visibility",
+      "to": "work_interaction",
+      "sign": "+",
+      "status": "selection_mechanism",
+      "source_ids": [
+        "8"
+      ],
+      "conditional_on": "only shown candidates can be directly acted on",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "work_interaction",
+      "to": "inferred_work_preference",
+      "sign": "+",
+      "status": "naive_learning_error",
+      "source_ids": [
+        "7",
+        "8"
+      ],
+      "conditional_on": "behavior erroneously treated as clean preference evidence",
+      "countermeasure": "exposure_logging",
+      "validation": "Test false preference changes under identical values"
+    },
+    {
+      "from": "inferred_work_preference",
+      "to": "work_visibility",
+      "sign": "+",
+      "status": "policy_feedback",
+      "source_ids": [
+        "7",
+        "8"
+      ],
+      "conditional_on": "learned preference feeds ranking",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "work_visibility",
+      "to": "growth_visibility",
+      "sign": "-",
+      "status": "capacity_hypothesis",
+      "source_ids": [
+        "8"
+      ],
+      "conditional_on": "limited user attention/exposure surface",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "growth_visibility",
+      "to": "growth_interaction",
+      "sign": "+",
+      "status": "selection_mechanism",
+      "source_ids": [
+        "8"
+      ],
+      "conditional_on": "only shown candidates can be acted upon",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "growth_interaction",
+      "to": "inferred_growth_preference",
+      "sign": "+",
+      "status": "naive_learning_error",
+      "source_ids": [
+        "7",
+        "8"
+      ],
+      "conditional_on": "behavior erroneously treated as clean preference",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "exposure_logging",
+      "to": "inferred_work_preference",
+      "sign": "0",
+      "status": "bias_mitigation_hypothesis",
+      "source_ids": [
+        "8"
+      ],
+      "conditional_on": "policy has overlap and valid exposure probabilities",
+      "countermeasure": "temporal_belief_revision",
+      "validation": "Measure calibration of preference inference"
+    },
+    {
+      "from": "temporary_disruptions",
+      "to": "false_goal_retirement",
+      "sign": "+",
+      "status": "naive_learning_error",
+      "source_ids": [
+        "20"
+      ],
+      "conditional_on": "missed sessions are treated as disinterest",
+      "countermeasure": "explicit_aspirations",
+      "validation": "Simulate exceptional weeks and measure stale preferences"
+    },
+    {
+      "from": "false_goal_retirement",
+      "to": "growth_visibility",
+      "sign": "-",
+      "status": "policy_feedback",
+      "source_ids": [
+        "10",
+        "11",
+        "20"
+      ],
+      "conditional_on": "retired goals are hidden",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "explicit_aspirations",
+      "to": "false_goal_retirement",
+      "sign": "-",
+      "status": "safeguard_hypothesis",
+      "source_ids": [
+        "17",
+        "18"
+      ],
+      "conditional_on": "explicit aspiration persists until revised",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "source_freshness",
+      "to": "false_non_events",
+      "sign": "-",
+      "status": "operational_hypothesis",
+      "source_ids": [
+        "1",
+        "3"
+      ],
+      "conditional_on": "coverage is known, complete and trusted",
+      "countermeasure": "source_reconciliation",
+      "validation": "Connector outage replay"
+    },
+    {
+      "from": "false_non_events",
+      "to": "unnecessary_followups",
+      "sign": "+",
+      "status": "social_hypothesis",
+      "source_ids": [
+        "1",
+        "3"
+      ],
+      "conditional_on": "system initiates followups from asserted absence",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "unnecessary_followups",
+      "to": "social_coordination_work",
+      "sign": "+",
+      "status": "social_hypothesis",
+      "source_ids": [
+        "1",
+        "3"
+      ],
+      "conditional_on": "counterpart requires response or trust repair",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "source_reconciliation",
+      "to": "source_freshness",
+      "sign": "+",
+      "status": "engineering_mechanism",
+      "source_ids": [
+        "26"
+      ],
+      "conditional_on": "provider API allows historical reconciliation",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "attention_suppression",
+      "to": "critical_omissions",
+      "sign": "+",
+      "status": "safety_risk",
+      "source_ids": [
+        "12",
+        "13",
+        "15"
+      ],
+      "conditional_on": "important item cannot be recovered before last-safe action",
+      "countermeasure": "critical_guardrails",
+      "validation": "Measure critical missed obligations"
+    },
+    {
+      "from": "critical_omissions",
+      "to": "manual_checking",
+      "sign": "+",
+      "status": "behavioral_hypothesis",
+      "source_ids": [
+        "15"
+      ],
+      "conditional_on": "user notices missed work and compensates",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "manual_checking",
+      "to": "user_oversight",
+      "sign": "+",
+      "status": "definitional",
+      "source_ids": [
+        "15"
+      ],
+      "conditional_on": "extra checking consumes attention",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "critical_guardrails",
+      "to": "critical_omissions",
+      "sign": "-",
+      "status": "design_hypothesis",
+      "source_ids": [
+        "15"
+      ],
+      "conditional_on": "time and severity gates accurate",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "automated_skill_work",
+      "to": "deliberate_practice",
+      "sign": "-",
+      "status": "deskilling_hypothesis",
+      "source_ids": [
+        "21"
+      ],
+      "conditional_on": "delegated work was intended as learning practice",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "deliberate_practice",
+      "to": "independent_competence",
+      "sign": "+",
+      "status": "learning_hypothesis",
+      "source_ids": [
+        "21"
+      ],
+      "conditional_on": "practice quality and feedback sufficient",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "independent_competence",
+      "to": "agent_dependency",
+      "sign": "-",
+      "status": "behavioral_hypothesis",
+      "source_ids": [
+        "21"
+      ],
+      "conditional_on": "user prefers to retain capability",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "verified_execution",
+      "to": "false_completion",
+      "sign": "-",
+      "status": "engineering_hypothesis",
+      "source_ids": [
+        "26",
+        "27"
+      ],
+      "conditional_on": "verification checks correct provider-side postcondition",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "false_completion",
+      "to": "user_oversight",
+      "sign": "+",
+      "status": "operational_hypothesis",
+      "source_ids": [
+        "26",
+        "27"
+      ],
+      "conditional_on": "user must discover and repair false completion",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "temporal_belief_revision",
+      "to": "preference_conflicts",
+      "sign": "-",
+      "status": "design_hypothesis",
+      "source_ids": [
+        "9",
+        "10",
+        "11"
+      ],
+      "conditional_on": "scope and supersession are correctly modeled",
+      "countermeasure": "",
+      "validation": ""
+    },
+    {
+      "from": "future_workload",
+      "to": "demand_for_automation",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "1",
+        "25"
+      ],
+      "conditional_on": "coordination costs rise with total commitments",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "demand_for_automation",
+      "to": "auto_efficiency",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "25"
+      ],
+      "conditional_on": "user deploys added automation that actually succeeds",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "plan_churn",
+      "to": "manual_schedule_edits",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "5"
+      ],
+      "conditional_on": "user corrects unexpected changes",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "manual_schedule_edits",
+      "to": "replan_events",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "5"
+      ],
+      "conditional_on": "manual corrections emit schedule-state changes",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "replan_events",
+      "to": "plan_churn",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "5"
+      ],
+      "conditional_on": "policy fully replans on every schedule change",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "agent_dependency",
+      "to": "automated_skill_work",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "21"
+      ],
+      "conditional_on": "increased reliance leads user to delegate previously practiced tasks",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "inferred_growth_preference",
+      "to": "growth_visibility",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "7",
+        "8"
+      ],
+      "conditional_on": "personalization policy reflects inferred preference",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "future_workload",
+      "to": "user_goal_displacement",
+      "sign": "+",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "17",
+        "18"
+      ],
+      "conditional_on": "scheduler sacrifices non-fixed goals",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    },
+    {
+      "from": "user_goal_displacement",
+      "to": "goal_progress",
+      "sign": "-",
+      "status": "untested_system_feedback_hypothesis",
+      "source_ids": [
+        "18",
+        "19"
+      ],
+      "conditional_on": "displaced time would otherwise support the chosen goal",
+      "countermeasure": "Constrained admission and longitudinal validation",
+      "validation": "Sequential simulation plus measured field exposure"
+    }
+  ],
+  "loops": [
+    {
+      "id": "R1",
+      "name": "Recovered-time treadmill",
+      "polarity": "reinforcing_harmful",
+      "path": [
+        "auto_efficiency",
+        "available_slack",
+        "new_commitments",
+        "future_workload",
+        "demand_for_automation",
+        "auto_efficiency"
+      ],
+      "control": "Do not automatically reallocate freed time; negotiate demand before accepting commitments."
+    },
+    {
+      "id": "R2",
+      "name": "Preference pollution",
+      "polarity": "reinforcing_harmful",
+      "path": [
+        "work_visibility",
+        "work_interaction",
+        "inferred_work_preference",
+        "work_visibility"
+      ],
+      "control": "Separate explicit aspirations and observed behavior; log exposures and correct selection bias only where identified."
+    },
+    {
+      "id": "R3",
+      "name": "Scheduling thrash",
+      "polarity": "reinforcing_harmful",
+      "path": [
+        "plan_churn",
+        "manual_schedule_edits",
+        "replan_events",
+        "plan_churn"
+      ],
+      "control": "Local repairs, hysteresis, instability penalties and safe resumption support."
+    },
+    {
+      "id": "R4",
+      "name": "Silent omission",
+      "polarity": "harmful_cascade_not_closed_loop",
+      "path": [
+        "attention_suppression",
+        "critical_omissions",
+        "manual_checking",
+        "user_oversight"
+      ],
+      "control": "Critical-miss guardrails independent of learned interruption preference."
+    },
+    {
+      "id": "R5",
+      "name": "False non-events damage relationships",
+      "polarity": "harmful_path",
+      "path": [
+        "false_non_events",
+        "unnecessary_followups",
+        "social_coordination_work"
+      ],
+      "control": "Freshness and provider-side coverage proof before asserting missing replies."
+    },
+    {
+      "id": "R6",
+      "name": "Competence displacement",
+      "polarity": "harmful_path",
+      "path": [
+        "automated_skill_work",
+        "deliberate_practice",
+        "independent_competence",
+        "agent_dependency",
+        "automated_skill_work"
+      ],
+      "control": "Respect user-selected collaborative and deliberate practice goals."
+    },
+    {
+      "id": "R7",
+      "name": "Exceptional week becomes identity",
+      "polarity": "harmful_path",
+      "path": [
+        "growth_visibility",
+        "growth_interaction",
+        "inferred_growth_preference",
+        "growth_visibility"
+      ],
+      "control": "Temporary context overrides; goal retirement requires explicit confirmation.",
+      "note": "Temporary disruption can initiate downward preference inference; the closed loop is the visibility-exposure-preference feedback."
+    }
+  ],
+  "limitations": [
+    "Edges represent mixed empirical findings, definitions and hypotheses; never infer verified causal effect without controlled evaluation.",
+    "R1, R2, R3, R6 and R7 include proposed directed feedback cycles. R4 and R5 are harmful causal cascades, not closed cycles. Edge signs/conditions must be validated.",
+    "No universal weighting of personal goals, human dignity, social relationships or wellbeing is asserted."
+  ]
+}

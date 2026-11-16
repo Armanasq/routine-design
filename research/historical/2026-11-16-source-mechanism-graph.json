@@ -1,0 +1,712 @@
+{
+  "title": "Routin Cross-Field Evidence and Mechanism Graph",
+  "version": "2026-11-16",
+  "caveat": "Hypothesized design links are not proof of Routin efficacy or novelty",
+  "nodes": [
+    {
+      "id": "S01",
+      "type": "source",
+      "bibliographic_description": "Erickson, Danis, Kellogg & Helander (2008). *Assistance: The Work Practices of Human Administrative Assistants and their Implications for IT and Organizations*. ACM CSCW.",
+      "url": "https://research.ibm.com/publications/assistance-the-work-practices-of-human-administrative-assistants-and-their-implications-for-it-and-organizations",
+      "source_label": "IBM"
+    },
+    {
+      "id": "S02",
+      "type": "source",
+      "bibliographic_description": "Hollan, Hutchins & Kirsh (2000). *Distributed Cognition: Toward a New Foundation for HCI Research*. ACM TOCHI.",
+      "url": "https://escholarship.org/uc/item/8sb9s5rm",
+      "source_label": "University of California record"
+    },
+    {
+      "id": "S03",
+      "type": "source",
+      "bibliographic_description": "Rico, Sanchez-Manzanares, Gil & Gibson (2008). *Team Implicit Coordination Processes: A Team Knowledge-Based Approach*. Academy of Management Review.",
+      "url": "https://doi.org/10.5465/AMR.2008.27751276",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S04",
+      "type": "source",
+      "bibliographic_description": "Gilbert (2015). *Strategic Offloading of Delayed Intentions into the External Environment*. Quarterly Journal of Experimental Psychology.",
+      "url": "https://doi.org/10.1080/17470218.2014.972963",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S05",
+      "type": "source",
+      "bibliographic_description": "Leroy & Glomb (2018). *Tasks Interrupted: Ready-to-Resume Plans and Attention Residue*. Organization Science.",
+      "url": "https://doi.org/10.1287/orsc.2017.1184",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S06",
+      "type": "source",
+      "bibliographic_description": "Iqbal & Bailey (2008). *Effects of Intelligent Notification Management on Users and Their Tasks*. ACM CHI.",
+      "url": "https://scispace.com/papers/effects-of-intelligent-notification-management-on-users-and-2zxy8frbl7",
+      "source_label": "Scholarly record"
+    },
+    {
+      "id": "S07",
+      "type": "source",
+      "bibliographic_description": "Czerwinski, Horvitz & Wilhite (2004). *A Diary Study of Task Switching and Interruptions*. ACM CHI.",
+      "url": "https://scispace.com/papers/a-diary-study-of-task-switching-and-interruptions-58tueenh8f",
+      "source_label": "Scholarly record"
+    },
+    {
+      "id": "S08",
+      "type": "source",
+      "bibliographic_description": "Boutilier (2002). *A POMDP Formulation of Preference Elicitation Problems*. AAAI.",
+      "url": "https://www.aaaipress.org/Library/AAAI/2002/aaai02-037.php",
+      "source_label": "AAAI record"
+    },
+    {
+      "id": "S09",
+      "type": "source",
+      "bibliographic_description": "Chajewska, Koller & Parr (2000). *Making Rational Decisions Using Adaptive Utility Elicitation*. AAAI.",
+      "url": "https://mlanthology.org/aaai/2000/chajewska2000aaai-making/",
+      "source_label": "Bibliographic record"
+    },
+    {
+      "id": "S10",
+      "type": "source",
+      "bibliographic_description": "Kapoor & Horvitz (2008). *Experience Sampling for Building Predictive User Models: A Comparative Study*. ACM CHI.",
+      "url": "https://scispace.com/papers/experience-sampling-for-building-predictive-user-models-a-hhn0y3dxk9",
+      "source_label": "Scholarly record"
+    },
+    {
+      "id": "S11",
+      "type": "source",
+      "bibliographic_description": "Kruglanski et al. (2002). *A Theory of Goal Systems*. Advances in Experimental Social Psychology.",
+      "url": "https://scispace.com/papers/a-theory-of-goal-systems-1bs5psp83t",
+      "source_label": "Scholarly record"
+    },
+    {
+      "id": "S12",
+      "type": "source",
+      "bibliographic_description": "Shah, Friedman & Kruglanski (2002). *Forgetting All Else: On the Antecedents and Consequences of Goal Shielding*. Journal of Personality and Social Psychology.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12500810/",
+      "source_label": "PubMed"
+    },
+    {
+      "id": "S13",
+      "type": "source",
+      "bibliographic_description": "Wrosch et al. (2003). *Adaptive Self-Regulation of Unattainable Goals*. Personality and Social Psychology Bulletin.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15018681/",
+      "source_label": "PubMed"
+    },
+    {
+      "id": "S14",
+      "type": "source",
+      "bibliographic_description": "Gollwitzer & Sheeran (2006). *Implementation Intentions and Goal Achievement: Meta-Analysis*. Advances in Experimental Social Psychology.",
+      "url": "https://scispace.com/papers/implementation-intentions-and-goal-achievement-a-meta-4awoi9wm93",
+      "source_label": "Scholarly record"
+    },
+    {
+      "id": "S15",
+      "type": "source",
+      "bibliographic_description": "Ahmetoglu, Brumby & Cox (2024). *Planning Fallacy Mitigation Strategies in Task Management Apps*. ACM CHIWORK.",
+      "url": "https://doi.org/10.1145/3663384.3663404",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S16",
+      "type": "source",
+      "bibliographic_description": "Little (2011). *Little's Law as Viewed on Its 50th Anniversary*. Operations Research.",
+      "url": "https://doi.org/10.1287/opre.1110.0940",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S17",
+      "type": "source",
+      "bibliographic_description": "Herroelen & Leus (2004). *The Construction of Stable Project Baseline Schedules*. European Journal of Operational Research.",
+      "url": "https://doi.org/10.1016/S0377-2217(03)00130-9",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S18",
+      "type": "source",
+      "bibliographic_description": "Lambrechts, Demeulemeester & Herroelen (2008). *A Tabu Search Procedure for Developing Robust Predictive Project Schedules*. International Journal of Production Economics.",
+      "url": "https://doi.org/10.1016/j.ijpe.2007.02.003",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S19",
+      "type": "source",
+      "bibliographic_description": "Horvitz (1987). *Reasoning About Beliefs and Actions under Computational Resource Constraints*. UAI.",
+      "url": "https://www.erichorvitz.com/u87.htm",
+      "source_label": "Author publication"
+    },
+    {
+      "id": "S20",
+      "type": "source",
+      "bibliographic_description": "Kazerouni et al. (2017). *Conservative Contextual Linear Bandits*. NeurIPS.",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/bdc4626aa1d1df8e14d80d345b2a442d-Abstract.html",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S21",
+      "type": "source",
+      "bibliographic_description": "Schnabel et al. (2016). *Recommendations as Treatments: Debiasing Learning and Evaluation*. ICML.",
+      "url": "https://proceedings.mlr.press/v48/schnabel16.html",
+      "source_label": "PMLR"
+    },
+    {
+      "id": "S22",
+      "type": "source",
+      "bibliographic_description": "Li et al. (2026). *HorizonBench: Long-Horizon Personalization with Evolving Preferences*. arXiv preprint.",
+      "url": "https://arxiv.org/abs/2604.17283",
+      "source_label": "arXiv"
+    },
+    {
+      "id": "S23",
+      "type": "source",
+      "bibliographic_description": "Uddin et al. (2026). *From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents*. Findings of ACL.",
+      "url": "https://aclanthology.org/2026.findings-acl.1337/",
+      "source_label": "ACL"
+    },
+    {
+      "id": "S24",
+      "type": "source",
+      "bibliographic_description": "Noessel (2026). *Deskilling and Overreliance: Two Long-Term Risks of AI Assistance*. AI Magazine. Small exploratory navigation evidence.",
+      "url": "https://doi.org/10.1002/aaai.70096",
+      "source_label": "Wiley"
+    },
+    {
+      "id": "S25",
+      "type": "source",
+      "bibliographic_description": "Ntoumanis et al. (2021). *Meta-Analysis of Self-Determination Theory-Informed Intervention Studies in the Health Domain*. Health Psychology Review.",
+      "url": "https://scispace.com/papers/a-meta-analysis-of-self-determination-theory-informed-2z1w4ufe5r",
+      "source_label": "Scholarly record"
+    },
+    {
+      "id": "S26",
+      "type": "source",
+      "bibliographic_description": "Epstein et al. (2015). *A Lived Informatics Model of Personal Informatics*. UbiComp.",
+      "url": "https://scispace.com/papers/a-lived-informatics-model-of-personal-informatics-3wgkrrzyks",
+      "source_label": "Scholarly record"
+    },
+    {
+      "id": "S27",
+      "type": "source",
+      "bibliographic_description": "Garcia-Molina & Salem (1987). *Sagas*. Princeton technical report.",
+      "url": "https://www.cs.princeton.edu/research/techreps/598",
+      "source_label": "Princeton"
+    },
+    {
+      "id": "S28",
+      "type": "source",
+      "bibliographic_description": "Chang & Geng (2025). *SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning*. PVLDB.",
+      "url": "https://doi.org/10.14778/3750601.3750611",
+      "source_label": "Publisher"
+    },
+    {
+      "id": "S29",
+      "type": "source",
+      "bibliographic_description": "Temporal (2026). *Activity retry and idempotency documentation*.",
+      "url": "https://docs.temporal.io/activity-definition",
+      "source_label": "Official docs"
+    },
+    {
+      "id": "S30",
+      "type": "source",
+      "bibliographic_description": "Google (2026). *Gmail Push API Guide*.",
+      "url": "https://developers.google.com/workspace/gmail/api/guides/push",
+      "source_label": "Official docs"
+    },
+    {
+      "id": "S31",
+      "type": "source",
+      "bibliographic_description": "Google (2026). *Google Calendar Push Notifications*.",
+      "url": "https://developers.google.com/workspace/calendar/api/guides/push",
+      "source_label": "Official docs"
+    },
+    {
+      "id": "S32",
+      "type": "source",
+      "bibliographic_description": "Google OR-Tools (2026). *CP-SAT Scheduling*.",
+      "url": "https://github.com/google/or-tools/blob/stable/ortools/sat/docs/scheduling.md",
+      "source_label": "Official code/docs"
+    },
+    {
+      "id": "M01",
+      "type": "synthesis_hypothesis",
+      "name": "Prospective memory + value of asking + interruption modeling -> Intent Externalization Controller",
+      "source_ids": [
+        "S04",
+        "S08",
+        "S09",
+        "S10"
+      ],
+      "description": "Capture every candidate intention in an evidence-backed ledger, but choose a trigger, user question, or silence independently. Estimate the cost of forgetting and the potential value of clarifying what matters. Use an explicit non-LLM rule for critical deadlines even if the interruptibility model is uncertain. A reminder may be bound to a situation (before a meeting, when a document becomes ready, at a planned breakpoint), not just a clock.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M02",
+      "type": "synthesis_hypothesis",
+      "name": "Task interruption + ready-to-resume planning + robust schedule stability -> Work-Resumption Guardian",
+      "source_ids": [
+        "S05",
+        "S06",
+        "S17",
+        "S18"
+      ],
+      "description": "If an interruption is authorized and valuable enough, capture `current_objective, next_step, unfinished_decisions, relevant_artifact, safe_return_condition` as a resumption capsule. Predict earliest feasible return, optionally create a protected recovery block, and re-optimize around it with a penalty for schedule churn. Do not demand that the user write a resume note; infer only when there is adequate evidence, otherwise use an optional one-line confirmation.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M03",
+      "type": "synthesis_hypothesis",
+      "name": "Distributed cognition + secretarial work + implicit coordination -> Situational Coordination Graph",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "description": "Model *who expects what from whom*, not just what the user intends to do. Store `actor, counterpart, requested_outcome, evidence, deadline, expected_reply, external_state, authority`. Monitor non-events only if a reply was expected **and** the source has sufficiently fresh coverage. Prepare appropriate handoffs or follow-ups rather than automatically sending them. Existence of a sent message is not evidence that someone agreed.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M04",
+      "type": "synthesis_hypothesis",
+      "name": "Goal systems + goal shielding + adaptive disengagement -> Personal Goal Portfolio Controller",
+      "source_ids": [
+        "S11",
+        "S12",
+        "S13",
+        "S14"
+      ],
+      "description": "Represent a user-chosen goal as `desired_outcome + alternative_ways + boundaries + indicators + revision_policy`. Distinguish *ends* from *means*: learning robotics could be advanced through study, projects, mentoring or reading. A single failed routine does not imply failure of the goal. Shield explicit protected goals from routine administrative encroachment, while permitting renegotiation on genuinely urgent occasions. Model `pause | revise_means | continue | retire_with_consent` instead of endless streaks.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M05",
+      "type": "synthesis_hypothesis",
+      "name": "Planning-fallacy research + stochastic scheduling + queueing -> Capacity and WIP Governor",
+      "source_ids": [
+        "S15",
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "description": "Estimate conditional task-duration distributions from calibrated history (with shrinkage to population priors), not one fixed duration. Incorporate transition costs, hard constraints, protected time, source uncertainty and buffers. Limit simultaneous *active* work only where the measured process supports a WIP-based policy; never apply Little's Law mechanically to heterogeneous personal goals or assume reducing WIP always increases productivity. Use rolling-horizon feasible scheduling and penalize movement of previously accepted commitments.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M06",
+      "type": "synthesis_hypothesis",
+      "name": "Rational metareasoning + progressive escalation -> Computation and Question Budget",
+      "source_ids": [
+        "S08",
+        "S09",
+        "S19"
+      ],
+      "description": "Route trivial tasks to deterministic rules, non-urgent ambiguous tasks to delayed deeper computation, and high-impact uncertain tasks to bounded deliberation plus explicit confirmation. Define `EV_computation` and `EV_question` separately. Do not use a powerful multi-agent pipeline for a low-risk calendar lookup. Require cost ceilings and deadlines for deliberation; stop when marginal expected benefit falls below marginal cost or a time constraint is reached.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M07",
+      "type": "synthesis_hypothesis",
+      "name": "Conservative online learning + selection-bias research -> Auditable Personalization Policy",
+      "source_ids": [
+        "S10",
+        "S20",
+        "S21"
+      ],
+      "description": "For every suggested action record `context, candidates, filtering_reason, shown_actions, selection_probability, policy_version, stated_user_feedback, later_outcome`. Avoid treating clicks, silence, or dismissals as unambiguous preferences. Use staged rollout: static baseline -> shadow policy -> randomized low-risk comparisons where consented -> calibrated personalized policy. Never explore external side-effect permissions; those require explicit grants. Use propensity correction only where overlap and defensible exposure probabilities exist.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M08",
+      "type": "synthesis_hypothesis",
+      "name": "Evolving memory benchmarks + temporal representation -> Belief Maintenance, not 'Chat Memory'",
+      "source_ids": [
+        "S02",
+        "S22",
+        "S23"
+      ],
+      "description": "Keep raw evidence, immutable-by-default event traces subject to deletion rules, current working state, episodic experience, semantic scoped beliefs, relational knowledge, procedural verified skills and uncertainty calibration. Each claim has valid time, observed time, source evidence, explicit/implicit origin, confidence and `supersedes` links. At retrieval, filter by context and valid time *before* semantic similarity. A memory write is a state transition with contradiction checks, not appending a sentence to a memory block. Never let an implicit habit silently override a current explicit constraint.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M09",
+      "type": "synthesis_hypothesis",
+      "name": "Autonomous convenience + skill preservation -> Competency-Preserving Delegation",
+      "source_ids": [
+        "S13",
+        "S14",
+        "S24",
+        "S25"
+      ],
+      "description": "Partition work into `administrative overhead`, `expert judgment`, `practice/learning`, `high-stakes human decision`. Default to automation of low-risk overhead. For user-declared growth/skill targets, let the user choose deliberate practice; provide feedback only after the user's attempt if they opt in. Do not impose mandatory educational friction on unrelated administrative work. Include `ability_preservation` as a long-term evaluation guardrail, not a secret reward.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M10",
+      "type": "synthesis_hypothesis",
+      "name": "Goal-lapse research + adaptive self-regulation -> Exception-Aware Routine Learning",
+      "source_ids": [
+        "S04",
+        "S13",
+        "S26"
+      ],
+      "description": "Model routine as a conditional policy with `trigger, time_window, goal_relation, context, suspension_conditions, preferred_recovery_options`. Distinguish one-time exception, repeated schedule conflict, seasonal shift, and actual goal change using changepoint hypotheses. `Missed` must never automatically mean `disliked`; if effect on future decisions matters, ask a short contextual question. Track progress against meaningful evidence, not streaks.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M11",
+      "type": "synthesis_hypothesis",
+      "name": "Saga transactions + agent planning validation + official execution semantics -> Verified Responsibility Closure",
+      "source_ids": [
+        "S27",
+        "S28",
+        "S29"
+      ],
+      "description": "Separate reasoning from execution. Every external effect has typed preconditions, authorization check, business idempotency key, expected postconditions, read-after-write verification, timeout and compensation or recovery procedure. `Provider accepted` is not `recipient agreed`; `calendar update requested` is not `verified on provider`. A reply expectation remains `waiting_external` until acknowledged, canceled or expired. On uncertain execution, reconcile before retrying. Compensation can be impossible for sent messages, so require an explicit pre-send gate.",
+      "validation_status": "not experimentally validated for Routin"
+    },
+    {
+      "id": "M12",
+      "type": "synthesis_hypothesis",
+      "name": "Bounded attention + long-term goals + secretary practice -> Focus Allocation with Critical-Omission Constraints",
+      "source_ids": [
+        "S01",
+        "S05",
+        "S08",
+        "S12"
+      ],
+      "description": "Jointly choose `which responsibility`, `when to intervene`, `how much information`, and `who acts`. Never equate priority with interruptibility or user preference with authorization. Use a constrained decision objective, not a pure ranking. Preserve focus where possible, yet override it for high-consequence exceptions; use expected value of information for questions and a source-of-truth view for audit. Long-term goals can be protected via explicit reserved capacity rather than secretly weighting 'growth' as a universal value.",
+      "validation_status": "not experimentally validated for Routin"
+    }
+  ],
+  "edges": [
+    {
+      "source": "S04",
+      "target": "M01",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S08",
+      "target": "M01",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S09",
+      "target": "M01",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S10",
+      "target": "M01",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S05",
+      "target": "M02",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S06",
+      "target": "M02",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S17",
+      "target": "M02",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S18",
+      "target": "M02",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S01",
+      "target": "M03",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S02",
+      "target": "M03",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S03",
+      "target": "M03",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S11",
+      "target": "M04",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S12",
+      "target": "M04",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S13",
+      "target": "M04",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S14",
+      "target": "M04",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S15",
+      "target": "M05",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S16",
+      "target": "M05",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S17",
+      "target": "M05",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S18",
+      "target": "M05",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S08",
+      "target": "M06",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S09",
+      "target": "M06",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S19",
+      "target": "M06",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S10",
+      "target": "M07",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S20",
+      "target": "M07",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S21",
+      "target": "M07",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S02",
+      "target": "M08",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S22",
+      "target": "M08",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S23",
+      "target": "M08",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S13",
+      "target": "M09",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S14",
+      "target": "M09",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S24",
+      "target": "M09",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S25",
+      "target": "M09",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S04",
+      "target": "M10",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S13",
+      "target": "M10",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S26",
+      "target": "M10",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S27",
+      "target": "M11",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S28",
+      "target": "M11",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S29",
+      "target": "M11",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S01",
+      "target": "M12",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S05",
+      "target": "M12",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S08",
+      "target": "M12",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "S12",
+      "target": "M12",
+      "relationship": "informs_hypothesis",
+      "note": "Source supports mechanism hypothesis, not Routin efficacy"
+    },
+    {
+      "source": "M01",
+      "target": "M12",
+      "relationship": "enables_intervention_selection",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M03",
+      "target": "M11",
+      "relationship": "provides_relational_wait_states",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M04",
+      "target": "M05",
+      "relationship": "constrains_goal_protection",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M05",
+      "target": "M12",
+      "relationship": "provides_capacity_forecasts",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M06",
+      "target": "M01",
+      "relationship": "limits_question_cost",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M07",
+      "target": "M08",
+      "relationship": "debiases_preference_learning",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M08",
+      "target": "M12",
+      "relationship": "provides_valid_scoped_beliefs",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M09",
+      "target": "M04",
+      "relationship": "protects_human_competence",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M10",
+      "target": "M08",
+      "relationship": "proposes_preference_revision",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M11",
+      "target": "M08",
+      "relationship": "supplies_verified_outcome_evidence",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M02",
+      "target": "M12",
+      "relationship": "handles_context_switches",
+      "note": "Architectural hypothesis, requires validation"
+    },
+    {
+      "source": "M07",
+      "target": "M12",
+      "relationship": "checks_conservative_policy",
+      "note": "Architectural hypothesis, requires validation"
+    }
+  ],
+  "counts": {
+    "sources": 32,
+    "syntheses": 12,
+    "connections": 54
+  }
+}
