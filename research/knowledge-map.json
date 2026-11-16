@@ -530,6 +530,128 @@
         "outcome semantics mismatch",
         "permission scope error"
       ]
+    },
+    {
+      "id": "M29",
+      "name": "Adaptive capability discovery and verified binding",
+      "papers": [
+        "P071",
+        "P072",
+        "P073",
+        "P080"
+      ],
+      "outputs": [
+        "retrieve first or plan first selected conditionally",
+        "abstract needs bound to actual trusted tools",
+        "registry version and consent checked"
+      ],
+      "tests": [
+        "all-required-tool coverage",
+        "hallucinated abstract stub rejected",
+        "tool removal and permission change"
+      ]
+    },
+    {
+      "id": "M30",
+      "name": "Domain-agnostic goal-to-operator composition",
+      "papers": [
+        "P081",
+        "P080",
+        "P073",
+        "P078"
+      ],
+      "outputs": [
+        "desired effect predicates",
+        "precondition/effect operator search",
+        "partial plan or explicit unsolvable/budget exhausted"
+      ],
+      "tests": [
+        "unseen-domain planning",
+        "different tool names same semantics",
+        "broken tool and unknown precondition"
+      ]
+    },
+    {
+      "id": "M31",
+      "name": "Verified interactive state transitions under tool change",
+      "papers": [
+        "P077",
+        "P078",
+        "P073",
+        "P027"
+      ],
+      "outputs": [
+        "world-state verification",
+        "exact permission boundary",
+        "durable receipt and unknown-effect reconciliation"
+      ],
+      "tests": [
+        "duplicate side effect",
+        "tool revision between plan and dispatch",
+        "partial external success"
+      ]
+    },
+    {
+      "id": "M32",
+      "name": "Streaming experience to demonstrable later-task learning",
+      "papers": [
+        "P074",
+        "P075",
+        "P076",
+        "P079"
+      ],
+      "outputs": [
+        "validated episode and correction",
+        "scoped procedural candidate",
+        "later-task improvement and negative transfer metrics"
+      ],
+      "tests": [
+        "with and without memory learning gain",
+        "feedback stored but not applied",
+        "overgeneralized procedure"
+      ]
+    },
+    {
+      "id": "M33",
+      "name": "Budget-aware metareasoning and tool search",
+      "papers": [
+        "P071",
+        "P072",
+        "P047",
+        "P019"
+      ],
+      "outputs": [
+        "cheap single-tool path",
+        "decomposition for complex goals",
+        "abstention on exhausted search"
+      ],
+      "tests": [
+        "inference budget and token cost",
+        "simple task overdeliberation",
+        "no false infeasibility"
+      ]
+    },
+    {
+      "id": "M34",
+      "name": "Open-world generalization with human goal integrity",
+      "papers": [
+        "P082",
+        "P074",
+        "P075",
+        "P076",
+        "P021"
+      ],
+      "outputs": [
+        "unseen-domain and unseen-tool splits",
+        "user-correctable normative state",
+        "long-horizon responsibility outcome evaluation"
+      ],
+      "tests": [
+        "held-out domains and tool sets",
+        "goal displacement",
+        "unsafe negative transfer",
+        "verified user effort reduction"
+      ]
     }
   ],
   "connections": [
@@ -732,6 +854,76 @@
       "from": "M28",
       "to": "M26",
       "why": "specialist risk envelope limits what otherwise syntactically compatible procedures may do"
+    },
+    {
+      "from": "M29",
+      "to": "M30",
+      "why": "the planner can only bind abstract required effects to actually discovered tools with current semantics"
+    },
+    {
+      "from": "M29",
+      "to": "M28",
+      "why": "cross-domain capability transfer must validate applicability, risk and permissions"
+    },
+    {
+      "from": "M29",
+      "to": "M17",
+      "why": "all tool definitions cannot occupy one context window; retrieve relevant trusted subset"
+    },
+    {
+      "from": "M30",
+      "to": "M14",
+      "why": "planning must preserve user-adopted intentions distinct from opportunistic means"
+    },
+    {
+      "from": "M30",
+      "to": "M05",
+      "why": "time and capacity feasibility belong to dynamic plan constraints before obligation acceptance"
+    },
+    {
+      "from": "M31",
+      "to": "M11",
+      "why": "tool provider acknowledgment and human/world outcome must be verified independently"
+    },
+    {
+      "from": "M31",
+      "to": "M18",
+      "why": "failed step may require selective replan without replaying irreversible effects"
+    },
+    {
+      "from": "M32",
+      "to": "M20",
+      "why": "episodic memories should become scoped procedures only when supported by later verified benefits"
+    },
+    {
+      "from": "M32",
+      "to": "M15",
+      "why": "remembering a preference is not the same as selecting and realizing it in later behavior"
+    },
+    {
+      "from": "M33",
+      "to": "M06",
+      "why": "spending time to retrieve and reason is a consequential metareasoning choice"
+    },
+    {
+      "from": "M33",
+      "to": "M12",
+      "why": "additional agent queries and prompts consume the user's attention or action window"
+    },
+    {
+      "from": "M34",
+      "to": "M22",
+      "why": "learned policies must protect explicit aspirational goals and user-selected assistance modes"
+    },
+    {
+      "from": "M34",
+      "to": "M16",
+      "why": "new domains require epistemically typed facts, forecasts and permission proofs"
+    },
+    {
+      "from": "M34",
+      "to": "M23",
+      "why": "shared outcome semantics must compose with domain-specific verification contracts"
     }
   ]
 }
