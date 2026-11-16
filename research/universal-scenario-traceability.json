@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "status": "synthetic_unexecuted",
+  "created_on": "2026-11-16",
+  "cases": [
+    {
+      "id": "U001",
+      "path": "tests/scenarios/universal/u001-learning-exam-vs-work-conflict.json",
+      "domains": [
+        "learning",
+        "work-projects"
+      ],
+      "source_paper_ids": [
+        "P063",
+        "P064",
+        "P065",
+        "P068"
+      ]
+    },
+    {
+      "id": "U002",
+      "path": "tests/scenarios/universal/u002-learning-mode-versus-delegated-writing.json",
+      "domains": [
+        "learning",
+        "applications"
+      ],
+      "source_paper_ids": [
+        "P063",
+        "P067",
+        "P068",
+        "P024"
+      ]
+    },
+    {
+      "id": "U003",
+      "path": "tests/scenarios/universal/u003-fitness-change-with-uncertain-shoulder-symptoms.json",
+      "domains": [
+        "fitness",
+        "health-navigation"
+      ],
+      "source_paper_ids": [
+        "P066",
+        "P059",
+        "P060"
+      ]
+    },
+    {
+      "id": "U004",
+      "path": "tests/scenarios/universal/u004-wellbeing-and-intervention-fatigue.json",
+      "domains": [
+        "wellbeing",
+        "work-projects"
+      ],
+      "source_paper_ids": [
+        "P061",
+        "P062",
+        "P070"
+      ]
+    },
+    {
+      "id": "U005",
+      "path": "tests/scenarios/universal/u005-clinical-record-sorting-without-diagnosis.json",
+      "domains": [
+        "health-navigation"
+      ],
+      "source_paper_ids": [
+        "P059",
+        "P060"
+      ]
+    },
+    {
+      "id": "U006",
+      "path": "tests/scenarios/universal/u006-application-eligibility-uncertain.json",
+      "domains": [
+        "applications",
+        "learning"
+      ],
+      "source_paper_ids": [
+        "P001",
+        "P037",
+        "P039"
+      ]
+    },
+    {
+      "id": "U007",
+      "path": "tests/scenarios/universal/u007-email-sent-without-acceptance.json",
+      "domains": [
+        "communication",
+        "work-projects"
+      ],
+      "source_paper_ids": [
+        "P036",
+        "P037",
+        "P027"
+      ]
+    },
+    {
+      "id": "U008",
+      "path": "tests/scenarios/universal/u008-family-time-and-private-event-redaction.json",
+      "domains": [
+        "family-life",
+        "work-projects"
+      ],
+      "source_paper_ids": [
+        "P039",
+        "P060"
+      ]
+    },
+    {
+      "id": "U009",
+      "path": "tests/scenarios/universal/u009-travel-booking-financial-side-effect.json",
+      "domains": [
+        "travel-logistics",
+        "finance-admin"
+      ],
+      "source_paper_ids": [
+        "P027",
+        "P059"
+      ]
+    },
+    {
+      "id": "U010",
+      "path": "tests/scenarios/universal/u010-bill-draft-is-not-payment.json",
+      "domains": [
+        "finance-admin"
+      ],
+      "source_paper_ids": [
+        "P058",
+        "P041"
+      ]
+    },
+    {
+      "id": "U011",
+      "path": "tests/scenarios/universal/u011-unknown-domain-fallback.json",
+      "domains": [
+        "core-coordination"
+      ],
+      "source_paper_ids": [
+        "P059",
+        "P069"
+      ]
+    },
+    {
+      "id": "U012",
+      "path": "tests/scenarios/universal/u012-negative-transfer-of-verified-work-skill.json",
+      "domains": [
+        "communication",
+        "health-navigation"
+      ],
+      "source_paper_ids": [
+        "P058",
+        "P052",
+        "P059"
+      ]
+    },
+    {
+      "id": "U013",
+      "path": "tests/scenarios/universal/u013-behavioral-proximal-outcome-not-clinical-benefit.json",
+      "domains": [
+        "wellbeing",
+        "fitness",
+        "health-navigation"
+      ],
+      "source_paper_ids": [
+        "P061",
+        "P070",
+        "P066"
+      ]
+    },
+    {
+      "id": "U014",
+      "path": "tests/scenarios/universal/u014-tutor-deployment-outcomes-conflict.json",
+      "domains": [
+        "learning"
+      ],
+      "source_paper_ids": [
+        "P067",
+        "P068",
+        "P063"
+      ]
+    },
+    {
+      "id": "U015",
+      "path": "tests/scenarios/universal/u015-cross-domain-revocation-and-memory-contamination.json",
+      "domains": [
+        "health-navigation",
+        "work-projects",
+        "communication"
+      ],
+      "source_paper_ids": [
+        "P060",
+        "P058",
+        "P041"
+      ]
+    },
+    {
+      "id": "U016",
+      "path": "tests/scenarios/universal/u016-open-job-application-and-gym-during-travel.json",
+      "domains": [
+        "applications",
+        "fitness",
+        "travel-logistics"
+      ],
+      "source_paper_ids": [
+        "P038",
+        "P039",
+        "P015"
+      ]
+    }
+  ]
+}
