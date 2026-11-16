@@ -1,0 +1,19 @@
+# P003 — Source and acquisition record
+
+**Paper:** Team Implicit Coordination Processes: A Team Knowledge-Based Approach  
+**Authors:** Rico, Sánchez-Manzanares, Gil & Gibson  
+**Year / venue:** 2008 / Academy of Management Review  
+**Canonical source:** https://doi.org/10.5465/AMR.2008.27751276  
+**Evidence reviewed:** abstract_plus_structured_extract  
+**Local full text:** NOT ACQUIRED.  
+**Copyright / redistribution:** NOT VERIFIED. Do not commit a publisher PDF or LaTeX source until license permits public republication.  
+**Last bibliographic review:** 2026-11-16  
+**Review:** [individual critical review](../../../literature-reviews/team-coordination/P003.md)
+
+## Acquisition instructions
+1. Open the canonical link and verify title, authors, exact version, DOI, venue and licensing.
+2. Download the author-licensed OA PDF/HTML/TeX to this directory where lawful. Record exact URL, fetched date, license, SHA256 and version.
+3. Update the review's access label after full reading of methods, results, supplements, and limitations.
+4. On failed access, record HTTP/status and keep source link rather than substituting a fabricated copy.
+
+**Current status:** link-only source record. The research repository does not claim the PDF was downloaded.
