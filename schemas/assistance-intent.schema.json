@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoutinAssistanceIntent",
+  "type": "object",
+  "required": [
+    "id",
+    "principal_id",
+    "goal_description",
+    "support_mode",
+    "domains",
+    "evidence_ids",
+    "normative_status",
+    "state_version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "principal_id": {
+      "type": "string"
+    },
+    "goal_description": {
+      "type": "string"
+    },
+    "support_mode": {
+      "enum": [
+        "delegate",
+        "collaborate",
+        "learn_practice",
+        "support_coach",
+        "observe"
+      ]
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "normative_status": {
+      "enum": [
+        "proposed",
+        "user_confirmed",
+        "superseded",
+        "paused",
+        "withdrawn"
+      ]
+    },
+    "state_version": {
+      "type": "string"
+    },
+    "target_outcome_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "protected_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority_grants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preference_scope": {
+      "type": "object"
+    },
+    "requires_specialist_review": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

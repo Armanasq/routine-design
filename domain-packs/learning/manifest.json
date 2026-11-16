@@ -1,0 +1,73 @@
+{
+  "id": "learning",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Study, learning and skill acquisition",
+  "domain": "education",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "organize_learning_goals",
+    "build_study_schedule",
+    "source_grounded_explanation",
+    "offer_practice_questions",
+    "record_voluntary_assessments",
+    "coordinate_spaced_practice"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "enroll_course",
+    "submit_assessment",
+    "contact_instructor"
+  ],
+  "unsupported_capabilities": [
+    "claim_mastery_from_study_time",
+    "complete_assessed_work_without_consent",
+    "award_credentials"
+  ],
+  "evidence_requirements": [
+    "official_course_material",
+    "validated_assessment",
+    "user_selected_learning_goal",
+    "dated_retention_target"
+  ],
+  "success_conditions": [
+    {
+      "id": "independent_mastery",
+      "kind": "incremental",
+      "verified_by": "validated independent assessment with criterion and time",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "retention",
+      "kind": "continuous",
+      "verified_by": "delayed unassisted assessment evidence",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "cognitive_offloading",
+    "displacement_of_course_participation",
+    "inaccurate_tutoring"
+  ],
+  "hard_rules": [
+    "In learn mode do not silently replace user practice with generated answer",
+    "Study time and content views are proxies, not mastery",
+    "Do not send graded work without exact authorization"
+  ],
+  "intervention_options": [
+    "active_retrieval",
+    "scaffolded_explanation",
+    "reschedule_practice",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "education",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

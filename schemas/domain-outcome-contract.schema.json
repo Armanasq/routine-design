@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoutinDomainOutcomeContract",
+  "type": "object",
+  "required": [
+    "id",
+    "user_intention_id",
+    "domain_pack_id",
+    "kind",
+    "success_conditions",
+    "evidence_required",
+    "proxy_limitations",
+    "verification_state"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "user_intention_id": {
+      "type": "string"
+    },
+    "domain_pack_id": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "binary",
+        "continuous",
+        "incremental",
+        "episodic",
+        "interpretive",
+        "externally_adjudicated"
+      ]
+    },
+    "success_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proxy_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification_state": {
+      "enum": [
+        "not_started",
+        "in_progress",
+        "partially_verified",
+        "submitted",
+        "awaiting_external",
+        "verified",
+        "verification_unknown",
+        "failed",
+        "cancelled"
+      ]
+    },
+    "authoritative_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safety_boundary_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "measurement_window": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "additionalProperties": false
+}

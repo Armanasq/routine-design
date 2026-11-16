@@ -1,0 +1,70 @@
+{
+  "id": "wellbeing",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Wellbeing, recovery and routines",
+  "domain": "wellbeing",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "protect_user_chosen_rest",
+    "organize_reflection",
+    "support_voluntary_habit_tracking",
+    "reduce_notification_load",
+    "propose_context_appropriate_routines"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "send_personal_checkin",
+    "share_wellbeing_update"
+  ],
+  "unsupported_capabilities": [
+    "diagnose_mental_health_condition",
+    "replace_psychotherapy",
+    "infer_private_emotional_state_from_calendar"
+  ],
+  "evidence_requirements": [
+    "user_declared_goal",
+    "opt_in_self_report",
+    "explicit_intervention_preference"
+  ],
+  "success_conditions": [
+    {
+      "id": "protected_recovery",
+      "kind": "continuous",
+      "verified_by": "user chosen protected interval maintained",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "meaningful_wellbeing_change",
+      "kind": "incremental",
+      "verified_by": "optional user-defined self report and context; cannot be inferred automatically",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "overprompting",
+    "unwanted_coaching",
+    "pressure_or_paternalism"
+  ],
+  "hard_rules": [
+    "NOOP is valid; absence of tracking is not absence of wellbeing",
+    "Paused goals stay paused unless user opts in",
+    "Do not pathologize lapsed routines"
+  ],
+  "intervention_options": [
+    "quiet_checkin_if_requested",
+    "reflect_on_barrier",
+    "protect_capacity",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "wellbeing",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

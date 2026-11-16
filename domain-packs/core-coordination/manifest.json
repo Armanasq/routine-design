@@ -1,0 +1,70 @@
+{
+  "id": "core-coordination",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Core coordination (fallback)",
+  "domain": "general",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "read_authorized_events",
+    "extract_proposed_intentions",
+    "manage_internal_responsibilities",
+    "prepare_drafts",
+    "propose_schedules",
+    "reconcile_source_coverage"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "send_outbound_message",
+    "modify_provider_calendar"
+  ],
+  "unsupported_capabilities": [
+    "specialist_professional_judgment",
+    "payment",
+    "clinical_diagnosis"
+  ],
+  "evidence_requirements": [
+    "source_provenance",
+    "current_connector_coverage",
+    "explicit_intent_scope"
+  ],
+  "success_conditions": [
+    {
+      "id": "acknowledged_responsibility",
+      "kind": "externally_adjudicated",
+      "verified_by": "source-backed owner and state",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "coordinated_agreement",
+      "kind": "externally_adjudicated",
+      "verified_by": "explicit counterpart agreement or authoritative record",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "unsupported-domain-specific claim",
+    "wrong-person match",
+    "false agreement"
+  ],
+  "hard_rules": [
+    "No specialized competence may be claimed when pack is absent",
+    "No external effect unless target-and-operation grant exists"
+  ],
+  "intervention_options": [
+    "silent_prepare",
+    "request_necessary_clarification",
+    "show_consequential_decision",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "general",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

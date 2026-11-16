@@ -1,0 +1,72 @@
+{
+  "id": "work-projects",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Work, projects and deadlines",
+  "domain": "work",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "manage_dependencies",
+    "track_owner_and_waiting_states",
+    "estimate_workload",
+    "draft_project_communication",
+    "coordinate_review"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "send_work_email",
+    "modify_shared_calendar",
+    "submit_project_deliverable"
+  ],
+  "unsupported_capabilities": [
+    "infer_company_policy_without_source",
+    "commit_colleague_without_agreement",
+    "disclose_other_domain_private_data"
+  ],
+  "evidence_requirements": [
+    "confirmed_project_record",
+    "current_message_thread",
+    "user_directive"
+  ],
+  "success_conditions": [
+    {
+      "id": "confirmed_deliverable",
+      "kind": "externally_adjudicated",
+      "verified_by": "recipient or authoritative system confirmation",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "review_handoff",
+      "kind": "incremental",
+      "verified_by": "recorded counterpart acceptance or authoritative handoff",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "recipient_confusion",
+    "deadlines_falsely_extended",
+    "unilateral_resource_commitment"
+  ],
+  "hard_rules": [
+    "Proposals are not accepted commitments",
+    "External reviewers require grounding, not just send receipt",
+    "Source current-state must be reconciled before chasing missing replies"
+  ],
+  "intervention_options": [
+    "silent_prepare",
+    "dependency_followup_with_grant",
+    "counterproposal",
+    "focus_exception",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "work",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

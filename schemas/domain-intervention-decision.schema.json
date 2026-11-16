@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DomainInterventionDecision",
+  "type": "object",
+  "required": [
+    "id",
+    "pack_id",
+    "decision_point",
+    "selected_option",
+    "considered_options",
+    "proximal_objective",
+    "distal_objective",
+    "source_health",
+    "permission_checked",
+    "context_version",
+    "risk_gate_result"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "pack_id": {
+      "type": "string"
+    },
+    "decision_point": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "selected_option": {
+      "type": "string"
+    },
+    "considered_options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proximal_objective": {
+      "type": "string"
+    },
+    "distal_objective": {
+      "type": "string"
+    },
+    "tailoring_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "receptivity_evidence_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_health": {
+      "enum": [
+        "fresh",
+        "stale",
+        "gap",
+        "revoked",
+        "unknown"
+      ]
+    },
+    "permission_checked": {
+      "type": "boolean"
+    },
+    "context_version": {
+      "type": "string"
+    },
+    "risk_gate_result": {
+      "enum": [
+        "pass",
+        "requires_approval",
+        "requires_specialist",
+        "blocked",
+        "not_applicable"
+      ]
+    },
+    "no_intervention_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reasoning_trace_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

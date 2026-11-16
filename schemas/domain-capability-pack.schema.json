@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoutinDomainCapabilityPack",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "status",
+    "domain",
+    "support_modes",
+    "capabilities",
+    "external_effects_requiring_explicit_grants",
+    "unsupported_capabilities",
+    "evidence_requirements",
+    "success_conditions",
+    "risk_hazards",
+    "hard_rules",
+    "intervention_options",
+    "noop_available",
+    "permission_ownership",
+    "domain_memory_scope",
+    "certification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft_research_only",
+        "literature_reviewed",
+        "schema_validated",
+        "safety_reviewed",
+        "simulated",
+        "shadow_evaluated",
+        "pilot_authorized",
+        "active",
+        "suspended",
+        "retired"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "support_modes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "delegate",
+          "collaborate",
+          "learn_practice",
+          "support_coach",
+          "observe"
+        ]
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "external_effects_requiring_explicit_grants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unsupported_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "success_conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "verified_by"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "binary",
+              "continuous",
+              "incremental",
+              "episodic",
+              "interpretive",
+              "externally_adjudicated"
+            ]
+          },
+          "verified_by": {
+            "type": "string"
+          },
+          "proxy_is_outcome": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "risk_hazards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hard_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "intervention_options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "noop_available": {
+      "type": "boolean"
+    },
+    "permission_ownership": {
+      "type": "string"
+    },
+    "domain_memory_scope": {
+      "type": "string"
+    },
+    "pack_provenance": {
+      "type": "string"
+    },
+    "certification": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

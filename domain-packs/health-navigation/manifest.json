@@ -1,0 +1,81 @@
+{
+  "id": "health-navigation",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Health information and appointment coordination",
+  "domain": "health",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "organize_authorized_records",
+    "schedule_appointments",
+    "create_questions_for_clinician",
+    "show_provenance_and_units",
+    "track_requested_followups"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "send_to_clinician",
+    "book_appointment",
+    "update_health_record"
+  ],
+  "unsupported_capabilities": [
+    "diagnose_condition",
+    "prescribe_or_modify_medication",
+    "autonomous_emergency_triage",
+    "treatment_plan_execution"
+  ],
+  "evidence_requirements": [
+    "authorized_medical_record",
+    "source_timestamp",
+    "qualified_professional_confirmation"
+  ],
+  "success_conditions": [
+    {
+      "id": "appointment_confirmed",
+      "kind": "externally_adjudicated",
+      "verified_by": "clinic booking acknowledgement",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "health_record_organized",
+      "kind": "episodic",
+      "verified_by": "source validated document organization; no therapeutic assertion",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "clinical_outcome",
+      "kind": "externally_adjudicated",
+      "verified_by": "only appropriate qualified professional evidence",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "sensitive_data_disclosure",
+    "unsafe_clinical_advice",
+    "false_emergency_reassurance",
+    "unsupported_lab_interpretation"
+  ],
+  "hard_rules": [
+    "Avoid autonomous diagnostic/treatment claims",
+    "Use source-specific units and dated clinical provenance",
+    "Urgent concerning signs should receive appropriate professional/emergency escalation information",
+    "No health facts in unrelated work message"
+  ],
+  "intervention_options": [
+    "organize_questions",
+    "appointment_planning",
+    "neutral_record_summary",
+    "professional_escalation_guidance",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "health",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

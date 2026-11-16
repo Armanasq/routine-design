@@ -1,0 +1,72 @@
+{
+  "id": "finance-admin",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Bills, claims and financial administration",
+  "domain": "finance",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "organize_bills",
+    "track_user_confirmed_due_dates",
+    "prepare_claim_documents",
+    "calculate_with_verified_inputs"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "make_payment",
+    "submit_claim",
+    "transfer_funds",
+    "disclose_financial_records"
+  ],
+  "unsupported_capabilities": [
+    "speculative_investment_execution",
+    "unverified_tax_advice",
+    "autonomous_purchase_or_payment"
+  ],
+  "evidence_requirements": [
+    "source_bill",
+    "payment_confirmation",
+    "official_claim_provider"
+  ],
+  "success_conditions": [
+    {
+      "id": "payment_completed",
+      "kind": "externally_adjudicated",
+      "verified_by": "bank/provider confirmed settlement",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "claim_submitted",
+      "kind": "externally_adjudicated",
+      "verified_by": "official claim/portal submission receipt",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "financial_exposure",
+    "fraud",
+    "identity_theft",
+    "hidden_misclassification"
+  ],
+  "hard_rules": [
+    "No money movement from behavior inference or broad autonomy preference",
+    "Validate recipient/account/amount with independent authorization",
+    "Document drafted != claim filed"
+  ],
+  "intervention_options": [
+    "due_date_notice",
+    "prepare_document",
+    "ask_for_exact_approval",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "finance",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

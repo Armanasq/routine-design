@@ -1,0 +1,72 @@
+{
+  "id": "fitness",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Gym, training and physical activity",
+  "domain": "fitness",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "schedule_user_chosen_sessions",
+    "record_opt_in_activity",
+    "summarize_training_history",
+    "suggest_general_low_risk_options",
+    "organize_equipment_and_travel"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "book_class",
+    "cancel_membership",
+    "contact_trainer"
+  ],
+  "unsupported_capabilities": [
+    "medical_clearance",
+    "injury_diagnosis",
+    "unsupervised_high_risk_exercise_prescription"
+  ],
+  "evidence_requirements": [
+    "user_reported_constraints",
+    "consented_activity_log",
+    "validated_technique_source"
+  ],
+  "success_conditions": [
+    {
+      "id": "chosen_activity_consistency",
+      "kind": "episodic",
+      "verified_by": "logged or user-confirmed session, not health benefit",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "performance_progress",
+      "kind": "incremental",
+      "verified_by": "user chosen comparable performance measurements",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "injury_or_contraindication",
+    "overconfident_readiness_inference",
+    "coercive_training"
+  ],
+  "hard_rules": [
+    "A reported new injury or concerning symptom blocks aggressive personalized progression",
+    "Wearable values do not prove clinical readiness or treatment effect",
+    "Protect user-chosen recovery capacity"
+  ],
+  "intervention_options": [
+    "feasible_session_option",
+    "education",
+    "rest_or_recovery_time",
+    "professional_review_suggestion",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "fitness",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

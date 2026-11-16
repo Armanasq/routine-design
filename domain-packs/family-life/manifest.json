@@ -1,0 +1,69 @@
+{
+  "id": "family-life",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Family and shared personal logistics",
+  "domain": "family",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "track_user_confirmed_commitments",
+    "prepare_shared_logistics",
+    "protect_family_time",
+    "coordinate_with_authorized_people"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "contact_family_member",
+    "share_location_or_schedule",
+    "modify_shared_booking"
+  ],
+  "unsupported_capabilities": [
+    "assume_third_party_consent",
+    "share_child_information_without_clear_authority",
+    "guess_sensitive_relationship_details"
+  ],
+  "evidence_requirements": [
+    "explicit_party_agreement",
+    "authorized_shared_schedule"
+  ],
+  "success_conditions": [
+    {
+      "id": "shared_plan_confirmed",
+      "kind": "externally_adjudicated",
+      "verified_by": "affected responsible parties confirm roles and timing",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "protected_family_interval",
+      "kind": "continuous",
+      "verified_by": "user chosen commitment respected",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "third_party_privacy",
+    "wrong_responsible_person",
+    "location_disclosure"
+  ],
+  "hard_rules": [
+    "Only disclose least-necessary logistics",
+    "Do not infer counterpart agreement from organizer calendar entry",
+    "Require appropriate authority for dependents and third parties"
+  ],
+  "intervention_options": [
+    "clarify_responsible_actor",
+    "propose_time",
+    "prepare_message",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "family",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}

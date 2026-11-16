@@ -1,0 +1,76 @@
+{
+  "id": "applications",
+  "version": "0.1.0",
+  "status": "draft_research_only",
+  "name": "Academic, employment and program applications",
+  "domain": "applications",
+  "support_modes": [
+    "delegate",
+    "collaborate",
+    "learn_practice",
+    "support_coach",
+    "observe"
+  ],
+  "capabilities": [
+    "collect_official_requirements",
+    "track_eligibility_uncertainty",
+    "build_document_checklist",
+    "draft_user_reviewable_materials",
+    "coordinate_referees",
+    "monitor_confirmed_deadlines"
+  ],
+  "external_effects_requiring_explicit_grants": [
+    "submit_application",
+    "contact_referee",
+    "send_documents",
+    "pay_application_fee"
+  ],
+  "unsupported_capabilities": [
+    "guarantee_acceptance",
+    "invent_funding",
+    "assume_eligibility_from_unofficial_source",
+    "submit_without_current_approval"
+  ],
+  "evidence_requirements": [
+    "official_application_page",
+    "required_document_versions",
+    "portal_receipt"
+  ],
+  "success_conditions": [
+    {
+      "id": "valid_submission",
+      "kind": "externally_adjudicated",
+      "verified_by": "official application portal receipt and submission state",
+      "proxy_is_outcome": false
+    },
+    {
+      "id": "offer_or_decision",
+      "kind": "externally_adjudicated",
+      "verified_by": "official authority decision only",
+      "proxy_is_outcome": false
+    }
+  ],
+  "risk_hazards": [
+    "missed_or_misread_deadlines",
+    "misrepresented_eligibility",
+    "unauthorized_data_submission",
+    "reference_privacy"
+  ],
+  "hard_rules": [
+    "Official current sources outrank forums/secondary lists for eligibility and deadlines",
+    "Draft does not equal submitted",
+    "Do not send personal documents or fees without exact consent"
+  ],
+  "intervention_options": [
+    "requirements_gap",
+    "deadline_warning",
+    "reference_followup_proposal",
+    "submission_review",
+    "noop"
+  ],
+  "noop_available": true,
+  "permission_ownership": "shared_independent_policy_engine",
+  "domain_memory_scope": "applications",
+  "pack_provenance": "docs/universal/ and literature-reviews/",
+  "certification": "unreviewed_not_executable"
+}
