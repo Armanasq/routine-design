@@ -1,5 +1,7 @@
 # Paper sources
 
-58 categorized canonical source records and corresponding original literature reviews are indexed in [catalog.json](catalog.json). **No original paper PDF/TeX/HTML bytes are currently committed**; accessible HTML papers were read in a browser and source URLs are provided, but repository acquisition/redistribution are unverified.
+**82 individually indexed studies** in [catalog.json](catalog.json), each with a corresponding original critical review and canonical source record. No original third-party PDF/TeX/HTML files are committed. Some papers were inspected through public HTML or excerpts, but most require full methods/results audits; abstracts alone are not full-text reading.
 
-Check source licensing before uploading binary original texts to a public GitHub repository. Lawfully downloaded source versions should include an acquisition record with exact URL, version, date, SHA256 and license. Run python scripts/verify_corpus.py to validate all review/source mappings.
+Verify legal rights and license *for the exact version* before uploading paper bytes to a public repository. For authorized sources record canonical URL, version, retrieval date and SHA256. A source pointer or paper summary does not mean the original article was downloaded.
+
+Use local scripts/verify_corpus.py to audit the review/source pair coverage. Current research areas include administrative cognition, interruptions, preference elicitation, goals, time management, execution/memory, dynamic tool discovery, hierarchical planning, continual agent learning and cross-domain human assistance.

@@ -18,10 +18,10 @@ Its success metric is real-world administrative burden **avoided** without incre
 6. [Hypotheses](research/hypotheses.md), [evaluation](research/evaluation.md), [research backlog](research/backlog.md) and [phased roadmap](research/roadmap.md).
 
 ## Corpus status
-- **70 individually indexed critical reviews**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
-- **70 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
-- **19 cross-paper syntheses** in `literature-reviews/syntheses/`.
-- **28 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
+- **82 individually indexed critical reviews**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
+- **82 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
+- **23 cross-paper syntheses** in `literature-reviews/syntheses/`.
+- **34 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
 - Prior research and two historical graphs in [research/historical](research/historical/README.md).
 - **Full-text PDFs/TeX in repository: 0.** Download from canonical links only after redistribution rights are verified. This environment did not support binary acquisition. See [source-acquisition policy](papers/acquisition.md) and [acquisition script](scripts/acquire_open_sources.py). Never call a link-only record a downloaded paper.
 - Individual reviews are structured critical analyses based on available abstracts and/or scholarly extractions, not verified exhaustive full-text reads. More rigorous full-text critical reviews are a tracked research priority.
@@ -88,6 +88,20 @@ The [universal architecture](docs/universal/00-vision-and-boundaries.md) formali
 - [Domain boundaries and consent](docs/universal/05-safety-and-boundaries.md) and [adaptive onboarding](docs/universal/09-adaptive-onboarding-and-earning-autonomy.md).
 - [Cross-domain scheduling](docs/universal/04-cross-domain-decision-and-time.md), [support/tutoring/coaching modes](docs/universal/03-intervention-modes-and-domain-learning.md), [new-domain admission](docs/universal/10-unseen-domain-admission-and-transfer.md).
 - [Research evaluation protocol](research/benchmarks/universal-cross-domain-evaluation.md), [16 synthetic cross-domain test contracts](tests/scenarios/universal/README.md), [science and regulatory evidence](docs/technical-references/universal-sources.md).
-- The corpus now contains **70 indexed paper reviews, 19 cross-paper syntheses and 28 mechanisms**. Actual full-text downloads and domain studies remain outstanding.
+- The corpus now contains **82 indexed paper reviews, 23 cross-paper syntheses and 34 mechanisms**. Actual full-text downloads and domain studies remain outstanding.
 
 All capability packs remain draft and cannot execute external actions. The current reference kernel and 26 earlier local tests do not validate the new universal design.
+
+
+## Adaptive dynamic backbone — 2026-11-16
+
+The latest research layer makes **100 example user situations into evaluation seeds, not hardcoded runtime workflows**. The adaptive core is organized by user-adopted goal effects, current source-backed state, abstract capability needs, trusted live tool discovery, admissible plan composition, independent permissions, external verification, and future-task learning.
+
+- [Adaptive backbone design and reading map](docs/backbone/INDEX.md) — ten detailed architecture chapters.
+- [100 scenarios with reasoning expectations](research/scenarios/universal-100.md) and [machine-readable dataset](research/scenarios/universal-100.json), covering 16 categories.
+- [Domain-independent reference planner](reference_kernel/adaptive_planner.py), [19 targeted tests](tests/test_adaptive_planner.py), and [limitations and verified blob hashes](reference_kernel/ADAPTIVE.md). The code is a bounded symbolic planner; it does not call real APIs.
+- [Six adaptive schemas](schemas/) — goal, abstract capability, registered operator, plan, learning update, and meta-control decision.
+- [Prior-art matrix](research/backbone/prior-art-gap-matrix.md), [falsifiable experiments](research/backbone/experimental-hypotheses.md).
+- Updated corpus: **82 individual reviews**, **23 cross-paper syntheses**, **34 research mechanisms** connected by an evidence graph.
+
+**Scope and limitations:** No autonomous generalist production agent exists here. The registry in the reference planner is supplied by tests; there is no real live MCP discovery, LLM-based plan synthesis, domain-specific effect validator, durable provider executor, or demonstrated long-term user benefit. The source corpus has no redistributed primary PDFs/TeX, and most reviews require complete methodological full-text verification. The 100 examples are not an independently tested benchmark. No GitHub Actions jobs are configured.

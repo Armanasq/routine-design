@@ -16,10 +16,10 @@ Follow an evidence-to-decision path rather than reading documents by filename.
 - [Observability and evaluation](architecture/evaluation-and-observability.md).
 
 ## Traceability
-- Paper-level evidence: [70 per-paper reviews](../literature-reviews/README.md).
-- Mechanism-level reasoning: [19 cross-paper syntheses](../literature-reviews/syntheses/).
-- Knowledge graph: [28 mechanisms](../research/knowledge-map.json) and [historical graph sources](../research/historical/).
-- Architecture tradeoffs: [ADR-0001–0014](../decisions/).
+- Paper-level evidence: [82 per-paper reviews](../literature-reviews/README.md).
+- Mechanism-level reasoning: [23 cross-paper syntheses](../literature-reviews/syntheses/).
+- Knowledge graph: [34 mechanisms](../research/knowledge-map.json) and [historical graph sources](../research/historical/).
+- Architecture tradeoffs: [ADR-0001–0017](../decisions/).
 - Adversarial proof examples: [synthetic scenarios](../tests/scenarios/), [reference unit and integration tests](../tests/).
 - Research standards: [brick-by-brick method](../research/brick-by-brick-method.md), [quality audit](../research/quality-audit.md).
 - Priority research gaps: [GitHub issues](https://github.com/Armanasq/routine-design/issues).
@@ -60,3 +60,21 @@ Research and architecture are partially specified and evolving. The Python refer
 - [Evidence reference catalog](technical-references/universal-sources.md)
 - [Cross-domain benchmark](../research/benchmarks/universal-cross-domain-evaluation.md)
 - [16 synthetic scenario contracts](../tests/scenarios/universal/README.md)
+
+
+## Adaptive, dynamic, non-hardcoded backbone
+
+- [Complete backbone reading path](backbone/INDEX.md)
+- [Practical intelligence architecture](backbone/00-practical-intelligence-architecture.md)
+- [Goal and abstract capability semantics](backbone/01-intention-and-capability-model.md)
+- [Live tool discovery and binding](backbone/02-dynamic-tool-discovery.md)
+- [Open-world planning and constrained control](backbone/03-adaptive-planning-and-control.md)
+- [Continual and future-oriented learning](backbone/04-experience-and-continual-learning.md)
+- [Durable execution and honest outcome states](backbone/05-durable-execution-and-unknown-outcomes.md)
+- [Unseen domain support](backbone/06-unseen-domains-and-competence.md)
+- [Technical runtime and replaceable interfaces](backbone/07-production-technology-and-interfaces.md)
+- [Experimental benchmark design](backbone/08-research-and-acceptance-benchmarks.md)
+- [Personal secretary initiative policy](backbone/09-assistant-identity-and-initiative.md)
+- [100 scenarios as an evaluation corpus](../research/scenarios/universal-100.md)
+- [Executable reference and 19 targeted regression tests](../reference_kernel/ADAPTIVE.md)
+- [Prior-art gap analysis](../research/backbone/prior-art-gap-matrix.md)
