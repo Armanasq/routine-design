@@ -18,10 +18,10 @@ Its success metric is real-world administrative burden **avoided** without incre
 6. [Hypotheses](research/hypotheses.md), [evaluation](research/evaluation.md), [research backlog](research/backlog.md) and [phased roadmap](research/roadmap.md).
 
 ## Corpus status
-- **58 individually indexed critical reviews**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
-- **58 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
-- **15 cross-paper syntheses** in `literature-reviews/syntheses/`.
-- **22 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
+- **70 individually indexed critical reviews**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
+- **70 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
+- **19 cross-paper syntheses** in `literature-reviews/syntheses/`.
+- **28 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
 - Prior research and two historical graphs in [research/historical](research/historical/README.md).
 - **Full-text PDFs/TeX in repository: 0.** Download from canonical links only after redistribution rights are verified. This environment did not support binary acquisition. See [source-acquisition policy](papers/acquisition.md) and [acquisition script](scripts/acquire_open_sources.py). Never call a link-only record a downloaded paper.
 - Individual reviews are structured critical analyses based on available abstracts and/or scholarly extractions, not verified exhaustive full-text reads. More rigorous full-text critical reviews are a tracked research priority.
@@ -78,3 +78,16 @@ A deeper evidence-to-action program is now documented in [docs/cognitive/](docs/
 The corresponding [58-paper corpus](literature-reviews/README.md) includes AdaMEM, MAGE, Agent Memory, MemGPT, Memory-R1, ExpeL, Reflexion, Voyager, A-MEM, Mem0 and cognitive memory theory. [22 mechanisms](research/knowledge-map.json) are connected to [decision contracts and adversarial scenarios](research/cognitive-traceability.json). None of these research ideas is a verified production contribution or measured user outcome.
 
 New typed JSON [memory/procedure/context schemas](schemas/) and 8 synthetic [cognitive scenarios](tests/scenarios/) specify engineering gates. They are test fixtures, not an implemented cognitive agent; the original 26 deterministic reference-kernel tests remain a separate earlier verification result.
+
+## Universal multi-domain research extension — 2026-11-16
+
+The [universal architecture](docs/universal/00-vision-and-boundaries.md) formalizes one shared personal secretary for learning, health navigation, gym/fitness, wellbeing, applications, work, communications, family, travel, finance and **unseen future domains**. It does not claim unlimited professional competence or action authority.
+
+- [Domain capability packs](domain-packs/README.md): 11 illustrative, **draft-only**, non-executable capability contracts.
+- [Whole-life ontology and outcome semantics](docs/universal/01-universal-ontology.md): separate observable action from genuine domain outcome.
+- [Domain boundaries and consent](docs/universal/05-safety-and-boundaries.md) and [adaptive onboarding](docs/universal/09-adaptive-onboarding-and-earning-autonomy.md).
+- [Cross-domain scheduling](docs/universal/04-cross-domain-decision-and-time.md), [support/tutoring/coaching modes](docs/universal/03-intervention-modes-and-domain-learning.md), [new-domain admission](docs/universal/10-unseen-domain-admission-and-transfer.md).
+- [Research evaluation protocol](research/benchmarks/universal-cross-domain-evaluation.md), [16 synthetic cross-domain test contracts](tests/scenarios/universal/README.md), [science and regulatory evidence](docs/technical-references/universal-sources.md).
+- The corpus now contains **70 indexed paper reviews, 19 cross-paper syntheses and 28 mechanisms**. Actual full-text downloads and domain studies remain outstanding.
+
+All capability packs remain draft and cannot execute external actions. The current reference kernel and 26 earlier local tests do not validate the new universal design.

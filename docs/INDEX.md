@@ -16,10 +16,10 @@ Follow an evidence-to-decision path rather than reading documents by filename.
 - [Observability and evaluation](architecture/evaluation-and-observability.md).
 
 ## Traceability
-- Paper-level evidence: [44 per-paper reviews](../literature-reviews/README.md).
-- Mechanism-level reasoning: [nine prior cross-paper syntheses](../literature-reviews/syntheses/).
-- Knowledge graph: [16 mechanisms](../research/knowledge-map.json) and [historical graph sources](../research/historical/).
-- Architecture tradeoffs: [ADR-0001–0007](../decisions/).
+- Paper-level evidence: [70 per-paper reviews](../literature-reviews/README.md).
+- Mechanism-level reasoning: [19 cross-paper syntheses](../literature-reviews/syntheses/).
+- Knowledge graph: [28 mechanisms](../research/knowledge-map.json) and [historical graph sources](../research/historical/).
+- Architecture tradeoffs: [ADR-0001–0014](../decisions/).
 - Adversarial proof examples: [synthetic scenarios](../tests/scenarios/), [reference unit and integration tests](../tests/).
 - Research standards: [brick-by-brick method](../research/brick-by-brick-method.md), [quality audit](../research/quality-audit.md).
 - Priority research gaps: [GitHub issues](https://github.com/Armanasq/routine-design/issues).
@@ -42,3 +42,21 @@ Research and architecture are partially specified and evolving. The Python refer
 - [Ablations, falsification and evaluation](cognitive/07-cognitive-research-evaluation.md)
 - [Candidate scientific contributions](../research/proposed-contributions-2026.md)
 - [Cognitive source-to-contract traceability](../research/cognitive-traceability.json)
+
+## Universal multi-domain personal secretary
+
+- [Universal product thesis and limits](universal/00-vision-and-boundaries.md)
+- [Universal ontology of intentions and outcomes](universal/01-universal-ontology.md)
+- [Domain capability pack design](universal/02-domain-capability-contract.md)
+- [Learning, coaching and adaptive intervention science](universal/03-intervention-modes-and-domain-learning.md)
+- [Whole-life planning and cross-domain decision making](universal/04-cross-domain-decision-and-time.md)
+- [Safety and privacy boundaries](universal/05-safety-and-boundaries.md)
+- [Representative end-to-end scenarios](universal/06-domain-scenarios.md)
+- [Contribution hypotheses and falsification](universal/07-research-and-evaluation.md)
+- [Implementation roadmap and topology](universal/08-architecture-and-roadmap.md)
+- [Gradual onboarding and earned autonomy](universal/09-adaptive-onboarding-and-earning-autonomy.md)
+- [New and unseen domain admission](universal/10-unseen-domain-admission-and-transfer.md)
+- [Draft pack examples](../domain-packs/README.md)
+- [Evidence reference catalog](technical-references/universal-sources.md)
+- [Cross-domain benchmark](../research/benchmarks/universal-cross-domain-evaluation.md)
+- [16 synthetic scenario contracts](../tests/scenarios/universal/README.md)
