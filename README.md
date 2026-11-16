@@ -54,3 +54,19 @@ No GitHub Actions workflows were configured, to avoid unwanted CI charges. Chang
 
 ## Deepening: epistemic and coordination research
 Nine additional sources P036–P044 cover social articulation, grounding, situated action, practical intention, belief revision, information-science epistemology, and recent 2026 personalization evidence. See [formal specifications](docs/formal/) and [research method](research/brick-by-brick-method.md).
+
+## Deep research-to-decision entrypoints
+
+- [Evidence and practical reasoning types](docs/formal/01-epistemic-and-practical-types.md): what Routin knows versus infers, values, authorizes, forecasts and verifies.
+- [Situated, revisable intentions](docs/formal/02-partial-intentions-and-situated-plans.md): stable user ends with flexible means.
+- [Grounded social coordination](docs/formal/03-joint-coordination-and-grounding.md): shared agreements and handoff verification.
+- [Preference retrieval, selection and realization](docs/formal/04-policy-and-memory-realization.md): operational learning rather than memory-only claims.
+- [Closed-loop decision policy](docs/formal/05-closed-loop-decision-process.md): constraint ordering, feasibility, attention and feedback.
+- [Information disclosure contract](docs/formal/06-information-and-action-contract.md): what, when, how much, and whose action—no UI design.
+- [Research construction method](research/brick-by-brick-method.md): each claim must survive adversarial examples and testing.
+- [Scientific quality audit](research/quality-audit.md): what is verified, preliminary or still missing.
+- [Reference kernel and test evidence](reference_kernel/README.md): research-only deterministic Python model, 26 local tests passed; not a production assistant.
+
+**Local validation:** python -m unittest discover -s tests -v ; python scripts/verify_corpus.py ; python scripts/validate_architecture.py. No paid CI workflow is configured.
+
+**Open limitations:** no in-repository original paper PDFs/TeX, no full-text scientific audit of all 44 papers, no real-world Routin performance evidence, and no genuine external-action backend.
