@@ -280,6 +280,130 @@
         "stale knowledge",
         "unearned authority"
       ]
+    },
+    {
+      "id": "M17",
+      "name": "Decision-scoped working context compiler",
+      "papers": [
+        "P048",
+        "P056",
+        "P046",
+        "P047",
+        "P041"
+      ],
+      "outputs": [
+        "mandatory evidence state",
+        "optional task-conditioned memory",
+        "proof of constraints retained"
+      ],
+      "tests": [
+        "critical-context omission",
+        "scope leakage",
+        "token cost"
+      ]
+    },
+    {
+      "id": "M18",
+      "name": "Dynamic strategy validity and selective branch repair",
+      "papers": [
+        "P045",
+        "P046",
+        "P050",
+        "P043"
+      ],
+      "outputs": [
+        "strategy refresh gate",
+        "valid execution prefix",
+        "invalidated dependent branch"
+      ],
+      "tests": [
+        "strategy inertia",
+        "duplicate effects after rollback",
+        "replan cost"
+      ]
+    },
+    {
+      "id": "M19",
+      "name": "Verified experience-to-procedure promotion",
+      "papers": [
+        "P050",
+        "P051",
+        "P052",
+        "P027",
+        "P058"
+      ],
+      "outputs": [
+        "typed procedure with pre/postconditions",
+        "quarantined failure traces",
+        "certification decision"
+      ],
+      "tests": [
+        "negative transfer",
+        "unauthorized action",
+        "false completion"
+      ]
+    },
+    {
+      "id": "M20",
+      "name": "Two-timescale evidence consolidation",
+      "papers": [
+        "P049",
+        "P054",
+        "P055",
+        "P057",
+        "P023"
+      ],
+      "outputs": [
+        "new episode",
+        "scoped semantic hypothesis",
+        "supersession and forgetting"
+      ],
+      "tests": [
+        "overgeneralized preferences",
+        "stale beliefs",
+        "write cost"
+      ]
+    },
+    {
+      "id": "M21",
+      "name": "Utility-governed memory construction and retention",
+      "papers": [
+        "P047",
+        "P055",
+        "P053",
+        "P058"
+      ],
+      "outputs": [
+        "ADD/UPDATE/QUARANTINE/NOOP",
+        "construction scheduling",
+        "cost-bound retrieval"
+      ],
+      "tests": [
+        "lifecycle cost",
+        "irrelevant memory steering",
+        "write backlog staleness"
+      ]
+    },
+    {
+      "id": "M22",
+      "name": "Goal-preserving longitudinal adaptation and cognitive agency",
+      "papers": [
+        "P041",
+        "P057",
+        "P024",
+        "P011",
+        "P012"
+      ],
+      "outputs": [
+        "user-directed delegation mode",
+        "protected development goal",
+        "low-burden preference refinement"
+      ],
+      "tests": [
+        "goal displacement",
+        "unnecessary user questions",
+        "skill autonomy"
+      ]
     }
   ],
   "connections": [
@@ -352,6 +476,76 @@
       "from": "M16",
       "to": "M08",
       "why": "belief revision precedes similarity retrieval"
+    },
+    {
+      "from": "M17",
+      "to": "M12",
+      "why": "only the evidence relevant to the current attention decision should occupy working context; mandatory constraints cannot be compressed away"
+    },
+    {
+      "from": "M17",
+      "to": "M08",
+      "why": "typed current-belief selection precedes optional semantic retrieval and window paging"
+    },
+    {
+      "from": "M18",
+      "to": "M11",
+      "why": "logical branch revision must reconcile irreversible external effects; no blind retries"
+    },
+    {
+      "from": "M19",
+      "to": "M11",
+      "why": "a learned procedure can execute only if current grants and external outcome verification pass"
+    },
+    {
+      "from": "M19",
+      "to": "M07",
+      "why": "procedure learning from observed choices requires exposure bias control and explicit user correction"
+    },
+    {
+      "from": "M20",
+      "to": "M08",
+      "why": "fast episodic recording and slower semantic consolidation must preserve temporal validity and source lineage"
+    },
+    {
+      "from": "M20",
+      "to": "M22",
+      "why": "a temporary scheduling anomaly cannot redefine a long-term personal intention"
+    },
+    {
+      "from": "M21",
+      "to": "M17",
+      "why": "high construction cost and lag must not delay fresh operational state at decision time"
+    },
+    {
+      "from": "M21",
+      "to": "M19",
+      "why": "procedural skill retention must depend on verified future usefulness, not memory frequency"
+    },
+    {
+      "from": "M18",
+      "to": "M05",
+      "why": "changed capacity and dependency forecasts invalidate local strategy, not necessarily user goals"
+    },
+    {
+      "from": "M22",
+      "to": "M04",
+      "why": "delegation is a normative choice: preserve skills and explicitly valued ends"
+    },
+    {
+      "from": "M22",
+      "to": "M12",
+      "why": "protect chosen goals when deciding when and what to surface"
+    },
+    {
+      "from": "M17",
+      "to": "M16",
+      "why": "data, evidence, beliefs, intentions, rights and outcomes have different admission requirements"
+    },
+    {
+      "from": "M18",
+      "to": "M17",
+      "why": "refresh working context when verified state invalidates plan assumptions"
     }
   ]
 }
