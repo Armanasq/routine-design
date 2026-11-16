@@ -404,6 +404,132 @@
         "unnecessary user questions",
         "skill autonomy"
       ]
+    },
+    {
+      "id": "M23",
+      "name": "Domain-composable outcome ontology",
+      "papers": [
+        "P059",
+        "P060",
+        "P069",
+        "P036",
+        "P037"
+      ],
+      "outputs": [
+        "domain outcome contracts",
+        "shared responsibility semantics",
+        "capability routing"
+      ],
+      "tests": [
+        "outcome false completion",
+        "unknown domain safe fallback",
+        "social agreement correctness"
+      ]
+    },
+    {
+      "id": "M24",
+      "name": "Intent-sensitive support mode selection",
+      "papers": [
+        "P063",
+        "P065",
+        "P067",
+        "P068",
+        "P041"
+      ],
+      "outputs": [
+        "delegate vs tutor vs coach mode",
+        "actual mastery vs completed admin"
+      ],
+      "tests": [
+        "unwanted cognitive offloading",
+        "correct mode adherence",
+        "subgroup learning harms"
+      ]
+    },
+    {
+      "id": "M25",
+      "name": "Context- and receptivity-gated interventions",
+      "papers": [
+        "P061",
+        "P062",
+        "P066",
+        "P069",
+        "P070"
+      ],
+      "outputs": [
+        "tailoring variables",
+        "decision point",
+        "NOOP option",
+        "intervention burden"
+      ],
+      "tests": [
+        "intrusions",
+        "proximal-distant discrepancy",
+        "inappropriate prompting"
+      ]
+    },
+    {
+      "id": "M26",
+      "name": "Health/fitness domain evidence and safety boundaries",
+      "papers": [
+        "P059",
+        "P060",
+        "P066",
+        "P070",
+        "P058"
+      ],
+      "outputs": [
+        "clinical vs wellness boundary",
+        "domain specialist dispatch",
+        "data isolation"
+      ],
+      "tests": [
+        "unsafe clinical automation",
+        "tool drift",
+        "health data leak"
+      ]
+    },
+    {
+      "id": "M27",
+      "name": "Whole-life goal portfolio and cross-domain admission",
+      "papers": [
+        "P011",
+        "P015",
+        "P060",
+        "P062",
+        "P065"
+      ],
+      "outputs": [
+        "feasible alternative portfolios",
+        "protected chosen time",
+        "interdomain negotiation"
+      ],
+      "tests": [
+        "overcommitment",
+        "involuntary goal displacement",
+        "value imposition"
+      ]
+    },
+    {
+      "id": "M28",
+      "name": "Negative-transfer-aware capability composition",
+      "papers": [
+        "P069",
+        "P059",
+        "P052",
+        "P058",
+        "P041"
+      ],
+      "outputs": [
+        "versioned competence pack",
+        "compatibility check",
+        "verified procedure transfer"
+      ],
+      "tests": [
+        "unsafe workflow reuse",
+        "outcome semantics mismatch",
+        "permission scope error"
+      ]
     }
   ],
   "connections": [
@@ -546,6 +672,66 @@
       "from": "M18",
       "to": "M17",
       "why": "refresh working context when verified state invalidates plan assumptions"
+    },
+    {
+      "from": "M23",
+      "to": "M11",
+      "why": "domain-specific outcome verification prevents false closure in learning, health, application and coordination contexts"
+    },
+    {
+      "from": "M23",
+      "to": "M03",
+      "why": "the same responsibility ontology must represent professional, personal, educational, clinical-navigation and logistical handoffs"
+    },
+    {
+      "from": "M24",
+      "to": "M09",
+      "why": "delegation is correct for administrative burdens but may displace the skill acquisition the user wants"
+    },
+    {
+      "from": "M24",
+      "to": "M22",
+      "why": "support mode belongs to user intentions and should adapt only within explicit agency bounds"
+    },
+    {
+      "from": "M25",
+      "to": "M12",
+      "why": "intervention timing requires receptivity, a NOOP option and separate proximal and distal outcomes"
+    },
+    {
+      "from": "M25",
+      "to": "M04",
+      "why": "intervention offers must relate to explicit long-term goals rather than engagement prediction"
+    },
+    {
+      "from": "M26",
+      "to": "M08",
+      "why": "sensitive domain evidence requires scoped temporal memory and cross-domain access restrictions"
+    },
+    {
+      "from": "M26",
+      "to": "M17",
+      "why": "working context compilation must omit irrelevant sensitive information and preserve clinical boundaries"
+    },
+    {
+      "from": "M27",
+      "to": "M05",
+      "why": "whole-life capacity admission compares new commitments before accepting and scheduling them"
+    },
+    {
+      "from": "M27",
+      "to": "M04",
+      "why": "explicit personal goal protection cannot be replaced by universal domain scores"
+    },
+    {
+      "from": "M28",
+      "to": "M19",
+      "why": "experience transfer needs compatibility of preconditions, permissions and outcomes"
+    },
+    {
+      "from": "M28",
+      "to": "M26",
+      "why": "specialist risk envelope limits what otherwise syntactically compatible procedures may do"
     }
   ]
 }
