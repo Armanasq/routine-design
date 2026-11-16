@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DecisionTrace",
+  "type": "object",
+  "required": [
+    "id",
+    "policy_version",
+    "belief_version",
+    "candidates",
+    "selected",
+    "authority_checked"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "belief_version": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "selected": {
+      "type": "string"
+    },
+    "authority_checked": {
+      "type": "boolean"
+    },
+    "user_override": {
+      "type": "boolean"
+    },
+    "exposure_probability": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "justification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainty": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

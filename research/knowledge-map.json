@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "description": "Research hypotheses, not causal conclusions. IDs refer to per-paper reviews and integrated mechanisms.",
+  "mechanisms": [
+    {
+      "id": "M01",
+      "name": "Intention externalization",
+      "papers": [
+        "P004",
+        "P008",
+        "P010"
+      ],
+      "outputs": [
+        "reminder vs silence",
+        "clarification timing"
+      ],
+      "tests": [
+        "missed intentions",
+        "intrusions"
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "Work resumption guardian",
+      "papers": [
+        "P005",
+        "P006",
+        "P007",
+        "P017"
+      ],
+      "outputs": [
+        "resumption capsule",
+        "breakpoint policy"
+      ],
+      "tests": [
+        "resume latency",
+        "errors"
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "Situational coordination",
+      "papers": [
+        "P001",
+        "P002",
+        "P003",
+        "P027"
+      ],
+      "outputs": [
+        "expected replies",
+        "dependency graph"
+      ],
+      "tests": [
+        "handoff detection",
+        "false follow-ups"
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "Goal portfolio controller",
+      "papers": [
+        "P011",
+        "P012",
+        "P013",
+        "P014",
+        "P025"
+      ],
+      "outputs": [
+        "protected goals",
+        "means revision"
+      ],
+      "tests": [
+        "goal continuation",
+        "autonomy"
+      ]
+    },
+    {
+      "id": "M05",
+      "name": "Capacity and admission",
+      "papers": [
+        "P015",
+        "P016",
+        "P017",
+        "P018",
+        "P032"
+      ],
+      "outputs": [
+        "accept/negotiate decision",
+        "robust schedule"
+      ],
+      "tests": [
+        "infeasible acceptance",
+        "schedule churn"
+      ]
+    },
+    {
+      "id": "M06",
+      "name": "Computation and question budget",
+      "papers": [
+        "P008",
+        "P009",
+        "P010",
+        "P019"
+      ],
+      "outputs": [
+        "think more/ask/act"
+      ],
+      "tests": [
+        "inference cost",
+        "decision error"
+      ]
+    },
+    {
+      "id": "M07",
+      "name": "Exposure-aware preference learning",
+      "papers": [
+        "P010",
+        "P020",
+        "P021",
+        "P022"
+      ],
+      "outputs": [
+        "preference hypothesis",
+        "policy gating"
+      ],
+      "tests": [
+        "feedback bias",
+        "preference drift"
+      ]
+    },
+    {
+      "id": "M08",
+      "name": "Temporal belief revision",
+      "papers": [
+        "P002",
+        "P022",
+        "P023",
+        "P029"
+      ],
+      "outputs": [
+        "supersession",
+        "valid-time retrieval"
+      ],
+      "tests": [
+        "stale memory errors"
+      ]
+    },
+    {
+      "id": "M09",
+      "name": "Competency-preserving delegation",
+      "papers": [
+        "P024",
+        "P025",
+        "P013"
+      ],
+      "outputs": [
+        "automation vs deliberate practice"
+      ],
+      "tests": [
+        "skill retention",
+        "user effort"
+      ]
+    },
+    {
+      "id": "M10",
+      "name": "Exception-aware routines",
+      "papers": [
+        "P013",
+        "P014",
+        "P026",
+        "P033",
+        "P035"
+      ],
+      "outputs": [
+        "pause/resume/revise routine"
+      ],
+      "tests": [
+        "false goal abandonment"
+      ]
+    },
+    {
+      "id": "M11",
+      "name": "Verified outcome workflows",
+      "papers": [
+        "P027",
+        "P028",
+        "P030"
+      ],
+      "outputs": [
+        "postcondition verification",
+        "unknown outcome recovery"
+      ],
+      "tests": [
+        "false completion",
+        "duplicate actions"
+      ]
+    },
+    {
+      "id": "M12",
+      "name": "Attention with omission constraints",
+      "papers": [
+        "P001",
+        "P005",
+        "P006",
+        "P008"
+      ],
+      "outputs": [
+        "who/when/what/how much"
+      ],
+      "tests": [
+        "critical omissions",
+        "attention burden"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "M03",
+      "to": "M05",
+      "why": "anticipated preparations and handoffs consume future capacity"
+    },
+    {
+      "from": "M05",
+      "to": "M12",
+      "why": "feasibility changes last useful intervention time"
+    },
+    {
+      "from": "M12",
+      "to": "M02",
+      "why": "interruptions change task resumption costs"
+    },
+    {
+      "from": "M07",
+      "to": "M08",
+      "why": "exposure biased feedback must not become durable preference"
+    },
+    {
+      "from": "M08",
+      "to": "M04",
+      "why": "currently valid aspirations constrain plan optimization"
+    },
+    {
+      "from": "M04",
+      "to": "M05",
+      "why": "protected goals reserve non-negotiable capacity"
+    },
+    {
+      "from": "M11",
+      "to": "M03",
+      "why": "provider effects update expected external handoffs"
+    },
+    {
+      "from": "M11",
+      "to": "M08",
+      "why": "verified outcomes create new episodic evidence"
+    },
+    {
+      "from": "M06",
+      "to": "M12",
+      "why": "additional questions and reasoning compete for attention budget"
+    },
+    {
+      "from": "M09",
+      "to": "M04",
+      "why": "learning intentions require user action, not maximal delegation"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "scenario_002",
+  "synthetic": true,
+  "description": "Exception must not rewrite long-term preference",
+  "events": [
+    {
+      "step": 1,
+      "type": "explicit_preference",
+      "text": "Do not schedule late meetings."
+    },
+    {
+      "step": 2,
+      "type": "exception",
+      "text": "For this single client meeting, 20:00 is fine."
+    },
+    {
+      "step": 3,
+      "type": "new_proposal",
+      "text": "Are you available at 20:00 every Thursday?"
+    }
+  ],
+  "assertions": [
+    "exception_scope_limited",
+    "standing_preference_preserved",
+    "no_permission_inferred"
+  ]
+}

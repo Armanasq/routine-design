@@ -1,0 +1,33 @@
+{
+  "id": "scenario_003",
+  "synthetic": true,
+  "description": "Displayed work does not prove preferences for work over learning",
+  "events": [
+    {
+      "step": 1,
+      "type": "explicit_goal",
+      "text": "Protect two learning sessions each week."
+    },
+    {
+      "step": 2,
+      "type": "selection_policy",
+      "shown": [
+        "work_task_1",
+        "work_task_2"
+      ],
+      "hidden": [
+        "learning_session_1"
+      ]
+    },
+    {
+      "step": 3,
+      "type": "interaction",
+      "clicked": "work_task_1"
+    }
+  ],
+  "assertions": [
+    "no_implicit_downgrade_of_learning_goal",
+    "decision_exposure_logged",
+    "clicked_item_not_treated_as_explicit_preference"
+  ]
+}

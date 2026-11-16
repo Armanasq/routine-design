@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observation",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "external_id",
+    "occurred_at",
+    "ingested_at",
+    "permission_scope",
+    "sync_state"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "external_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ingested_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "permission_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sync_state": {
+      "enum": [
+        "fresh",
+        "stale",
+        "gap",
+        "revoked",
+        "unknown"
+      ]
+    },
+    "payload_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

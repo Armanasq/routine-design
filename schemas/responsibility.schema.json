@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Responsibility",
+  "type": "object",
+  "required": [
+    "id",
+    "owner_id",
+    "state",
+    "evidence_ids",
+    "outcome_spec"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "owner_id": {
+      "type": "string"
+    },
+    "counterparty_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "enum": [
+        "candidate",
+        "inferred",
+        "confirmed",
+        "actionable",
+        "prepared",
+        "approval_pending",
+        "executing",
+        "submitted",
+        "awaiting_external",
+        "verified_complete",
+        "deferred",
+        "blocked",
+        "disputed",
+        "cancelled",
+        "superseded",
+        "verification_unknown",
+        "failed_retryable",
+        "failed_terminal"
+      ]
+    },
+    "outcome_spec": {
+      "type": "string"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "goal_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependency_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deadline_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "deadline_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "verification_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
