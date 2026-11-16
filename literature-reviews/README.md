@@ -1,8 +1,9 @@
-# Literature review index
+# Critical literature review index
 
-**70 indexed critical reviews** with corresponding source records. Access levels vary; some source materials were read beyond abstracts, but a systematic full-text audit of the corpus has not been completed. **0 original PDF/TeX/HTML paper bytes are committed to this repository**.
+**82 reviewed research items**, each with a matching provenance record. The corpus has no original publisher PDF/TeX files. Abstract- or introduction-based reviews are not a completed systematic literature review.
 
-## Topics
+## Research fields
+
 - active-elicitation: 2
 - adaptive-agent-memory: 1
 - adaptive-intervention: 1
@@ -22,6 +23,7 @@
 - complementary-learning: 1
 - conservative-learning: 1
 - context-window-memory: 1
+- continual-learning: 2
 - conversational-grounding: 1
 - counterfactual-learning: 1
 - distributed-cognition: 1
@@ -32,16 +34,20 @@
 - experience-reflection: 1
 - experiential-transfer: 1
 - fitness-coaching: 1
+- future-agent-memory: 1
 - generative-episodic-memory: 1
 - goal-adaptation: 1
 - goal-systems: 2
 - habit-formation: 1
+- harness-learning: 1
+- hierarchical-planning: 1
 - human-agency: 1
 - human-ai-guidelines: 1
 - intention-philosophy: 1
 - interruptions: 3
 - learned-memory-operations: 1
 - learning-science: 2
+- long-horizon-real-work: 1
 - long-memory-evaluation: 1
 - longitudinal-health-agency: 1
 - memory-agent-safety: 1
@@ -51,88 +57,105 @@
 - persistent-llm-memory: 1
 - personal-health-agent: 1
 - personal-informatics: 3
+- planning-evaluation: 1
 - proactive-agents: 1
 - prospective-memory: 1
 - queueing: 1
+- reason-act-loop: 1
 - robust-scheduling: 2
 - secretarial: 1
 - self-regulated-learning: 1
 - situated-action: 1
 - skill-library: 1
+- stateful-tool-use: 2
 - team-coordination: 1
 - time-management: 1
 - time-planning: 1
+- tool-discovery: 2
 
-## Reviews
-- [P001 — Assistance: The Work Practices of Human Administrative Assistants and Their Implications for IT and Organizations](./secretarial/P001.md) (2008; `abstract_plus_prior_full_text_extract`)
-- [P002 — Distributed Cognition: Toward a New Foundation for Human-Computer Interaction Research](./distributed-cognition/P002.md) (2000; `public_full_text_available`)
-- [P003 — Team Implicit Coordination Processes: A Team Knowledge-Based Approach](./team-coordination/P003.md) (2008; `abstract_plus_structured_extract`)
-- [P004 — Strategic Offloading of Delayed Intentions into the External Environment](./prospective-memory/P004.md) (2015; `structured_extract`)
-- [P005 — Tasks Interrupted: How Anticipating Time Pressure on Resumption of an Interrupted Task Causes Attention Residue and Low Performance on Interrupting Tasks and How a Ready-to-Resume Plan Mitigates the Effects](./interruptions/P005.md) (2018; `abstract_plus_structured_extract`)
-- [P006 — Effects of Intelligent Notification Management on Users and Their Tasks](./interruptions/P006.md) (2008; `structured_extract`)
-- [P007 — A Diary Study of Task Switching and Interruptions](./interruptions/P007.md) (2004; `structured_extract`)
-- [P008 — A POMDP Formulation of Preference Elicitation Problems](./active-elicitation/P008.md) (2002; `structured_extract`)
-- [P009 — Making Rational Decisions Using Adaptive Utility Elicitation](./active-elicitation/P009.md) (2000; `structured_extract`)
-- [P010 — Experience Sampling for Building Predictive User Models: A Comparative Study](./attention-learning/P010.md) (2008; `structured_extract`)
-- [P011 — A Theory of Goal Systems](./goal-systems/P011.md) (2002; `structured_extract`)
-- [P012 — Forgetting All Else: On the Antecedents and Consequences of Goal Shielding](./goal-systems/P012.md) (2002; `structured_extract`)
-- [P013 — Adaptive Self-Regulation of Unattainable Goals: Goal Disengagement, Goal Reengagement, and Subjective Well-Being](./goal-adaptation/P013.md) (2003; `structured_extract`)
-- [P014 — Implementation Intentions and Goal Achievement: A Meta-Analysis of Effects and Processes](./behavior-change/P014.md) (2006; `abstract_plus_full_text_available`)
-- [P015 — Planning Fallacy Mitigation Strategies in Task Management Apps](./time-planning/P015.md) (2024; `structured_extract`)
-- [P016 — Little's Law as Viewed on Its 50th Anniversary](./queueing/P016.md) (2011; `abstract_plus_structured_extract`)
-- [P017 — The Construction of Stable Project Baseline Schedules](./robust-scheduling/P017.md) (2004; `structured_extract`)
-- [P018 — Proactive and Reactive Strategies for Resource-Constrained Project Scheduling with Uncertain Resource Availabilities](./robust-scheduling/P018.md) (2008; `structured_extract`)
-- [P019 — Reasoning About Beliefs and Actions Under Computational Resource Constraints](./metareasoning/P019.md) (1987; `structured_extract`)
-- [P020 — Conservative Contextual Linear Bandits](./conservative-learning/P020.md) (2017; `structured_extract`)
-- [P021 — Recommendations as Treatments: Debiasing Learning and Evaluation](./counterfactual-learning/P021.md) (2016; `abstract_plus_structured_extract`)
-- [P022 — HorizonBench: Long-Horizon Personalization with Evolving Preferences](./evolving-memory/P022.md) (2026; `abstract_plus_structured_extract`)
-- [P023 — From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents](./evolving-memory/P023.md) (2026; `public_full_text_available`)
-- [P024 — Deskilling and Overreliance: Two Long-Term Risks of AI Assistance, and What Designers Can Do About Them](./human-agency/P024.md) (2026; `structured_extract`)
-- [P025 — A Meta-Analysis of Self-Determination Theory-Informed Intervention Studies in the Health Domain](./motivation/P025.md) (2021; `abstract_plus_structured_extract`)
-- [P026 — A Lived Informatics Model of Personal Informatics](./personal-informatics/P026.md) (2015; `structured_extract`)
-- [P027 — Sagas](./distributed-workflows/P027.md) (1987; `abstract_plus_structured_extract`)
-- [P028 — SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning](./distributed-workflows/P028.md) (2025; `structured_extract`)
-- [P029 — LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory](./long-memory-evaluation/P029.md) (2025; `abstract_plus_structured_extract`)
-- [P030 — Guidelines for Human-AI Interaction](./human-ai-guidelines/P030.md) (2019; `abstract_plus_structured_extract`)
-- [P031 — Having Lunch Now: Understanding How Users Engage with a Proactive Daily Planning and Reflection Agent](./proactive-agents/P031.md) (2026; `structured_extract`)
-- [P032 — Does Time Management Work? A Meta-Analysis](./time-management/P032.md) (2021; `abstract_plus_structured_extract`)
-- [P033 — Beyond Self-Tracking and Reminders: Designing Smartphone Apps That Support Habit Formation](./habit-formation/P033.md) (2015; `structured_extract`)
-- [P034 — A Stage-Based Model of Personal Informatics Systems](./personal-informatics/P034.md) (2010; `abstract_plus_structured_extract`)
-- [P035 — Personal Tracking as Lived Informatics](./personal-informatics/P035.md) (2014; `structured_extract`)
-- [P036 — Taking CSCW Seriously: Supporting Articulation Work](./articulation-work/P036.md) (1992; `publisher_abstract_and_excerpts`)
-- [P037 — Grounding in Communication](./conversational-grounding/P037.md) (1991; `author_chapter_excerpts_bibliographic_record`)
-- [P038 — Plans and Situated Actions: The Problem of Human-Machine Communication](./situated-action/P038.md) (1987; `publisher_summary_selected_chapter`)
-- [P039 — Intention, Plans, and Practical Reason](./intention-philosophy/P039.md) (1987; `publisher_description_and_philosophical_overview`)
-- [P040 — The Knowledge Pyramid: A Critique of the DIKW Hierarchy](./epistemology/P040.md) (2009; `publisher_abstract_institutional_record`)
-- [P041 — Why Bother Me Again? Benchmarking Personal Agent Memory for Interaction Preferences](./agent-personalization/P041.md) (2026; `project_site_code_results_and_abstract`)
-- [P042 — Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](./agent-memory-systems/P042.md) (2026; `abstract_only`)
-- [P043 — Principles of Mixed-Initiative User Interfaces](./mixed-initiative/P043.md) (1999; `publisher_abstract_author_notes`)
-- [P044 — On the Logic of Theory Change: Partial Meet Contraction and Revision Functions](./belief-revision/P044.md) (1985; `publisher_abstract_and_formal_overview`)
-- [P045 — AdaMEM: Test-Time Adaptive Memory for Language Agents](./adaptive-agent-memory/P045.md) (2026; `methods_ablation_limitations_html_inspected`)
-- [P046 — Beyond Semantic Organization: Memory as Execution State Management for Long-Horizon Agents](./execution-state-memory/P046.md) (2026; `arxiv_html_method_experiment_ablation_inspected_peer_review_record_verified`)
-- [P047 — Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](./agent-memory-systems/P047.md) (2026; `full_html_taxonomy_benchmark_tables_limitations_inspected`)
-- [P048 — MemGPT: Towards LLMs as Operating Systems](./context-window-memory/P048.md) (2023; `official_abstract_and_project_docs`)
-- [P049 — Generative Agents: Interactive Simulacra of Human Behavior](./generative-episodic-memory/P049.md) (2023; `publisher_full_abstract_and_author_summary`)
-- [P050 — Reflexion: Language Agents with Verbal Reinforcement Learning](./experience-reflection/P050.md) (2023; `conference_abstract_and_method_description`)
-- [P051 — ExpeL: LLM Agents Are Experiential Learners](./experiential-transfer/P051.md) (2024; `official_journal_abstract`)
-- [P052 — Voyager: An Open-Ended Embodied Agent with Large Language Models](./skill-library/P052.md) (2024; `journal_summary_and_arxiv_abstract`)
-- [P053 — A-MEM: Agentic Memory for LLM Agents](./agentic-semantic-memory/P053.md) (2025; `conference_abstract_and_project_docs`)
-- [P054 — Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](./persistent-llm-memory/P054.md) (2025; `author_abstract_and_reported_benchmark`)
-- [P055 — Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning](./learned-memory-operations/P055.md) (2026; `peer_reviewed_paper_abstract_and_metadata`)
-- [P056 — The Episodic Buffer: A New Component of Working Memory?](./cognitive-working-memory/P056.md) (2000; `pubmed_abstract_and_tertiary_context`)
-- [P057 — Why There Are Complementary Learning Systems in the Hippocampus and Neocortex: Insights from the Successes and Failures of Connectionist Models of Learning and Memory](./complementary-learning/P057.md) (1995; `pubmed_abstract_and_foundational_theory`)
-- [P058 — Memory-Induced Tool-Drift in LLM Agents](./memory-agent-safety/P058.md) (2026; `arxiv_author_abstract`)
-- [P059 — The anatomy of a personal health agent](./personal-health-agent/P059.md) (2026; `official_open_access_abstract_methods_overview_results_and_limitations_selected`)
-- [P060 — A framework for longitudinal health AI agents](./longitudinal-health-agency/P060.md) (2026; `pubmed_full_text_pmc_article_selected_substantive_sections`)
-- [P061 — Just-in-Time Adaptive Interventions (JITAIs) in Mobile Health: Key Components and Design Principles for Ongoing Health Behavior Support](./adaptive-intervention/P061.md) (2018; `open_access_full_text_framework_sections_and_example_rules`)
-- [P062 — The behaviour change wheel: A new method for characterising and designing behaviour change interventions](./behavior-change-theory/P062.md) (2011; `official_open_access_abstract_method_and_model`)
-- [P063 — Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology](./learning-science/P063.md) (2013; `publisher_abstract_and_formal_results_overview`)
-- [P064 — Distributed practice in verbal recall tasks: A review and quantitative synthesis](./learning-science/P064.md) (2006; `pubmed_abstract_and_original_meta_analysis_summary`)
-- [P065 — Becoming a Self-Regulated Learner: An Overview](./self-regulated-learning/P065.md) (2002; `eric_bibliographic_abstract_and_phase_framework_excerpt`)
-- [P066 — GPTCoach: Towards LLM-Based Physical Activity Coaching](./fitness-coaching/P066.md) (2025; `acm_open_article_abstract_and_author_pdf_limitations_section`)
-- [P067 — AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting](./ai-tutoring-positive-rct/P067.md) (2025; `open_access_article_methods_results_discussion_and_limitations_selected`)
-- [P068 — The Effects of Course-Integrated AI Tutoring on Student Performance and Engagement: A Randomized University Trial](./ai-tutoring-negative-rct/P068.md) (2026; `official_iza_and_edworkingpapers_abstract_and_study_details`)
-- [P069 — An expandable approach for design and personalization of digital, just-in-time adaptive interventions](./adaptive-intervention-engineering/P069.md) (2019; `open_access_abstract_methods_simulation_results_summary`)
-- [P070 — Application of Just-in-Time Adaptive Interventions in Dietary Health Management: Systematic Review](./adaptive-intervention-systematic-review/P070.md) (2026; `open_access_registered_systematic_review_abstract_results_selection_and_conclusions`)
+## Source-specific reviews
 
-[Source catalog](../papers/catalog.json) · [Cross-paper synthesis](syntheses/) · [Research integrity](../docs/research-policy/source-and-review-standard.md).
+- [P001 — Assistance: The Work Practices of Human Administrative Assistants and Their Implications for IT and Organizations](./secretarial/P001.md) (2008; abstract_plus_prior_full_text_extract)
+- [P002 — Distributed Cognition: Toward a New Foundation for Human-Computer Interaction Research](./distributed-cognition/P002.md) (2000; public_full_text_available)
+- [P003 — Team Implicit Coordination Processes: A Team Knowledge-Based Approach](./team-coordination/P003.md) (2008; abstract_plus_structured_extract)
+- [P004 — Strategic Offloading of Delayed Intentions into the External Environment](./prospective-memory/P004.md) (2015; structured_extract)
+- [P005 — Tasks Interrupted: How Anticipating Time Pressure on Resumption of an Interrupted Task Causes Attention Residue and Low Performance on Interrupting Tasks and How a Ready-to-Resume Plan Mitigates the Effects](./interruptions/P005.md) (2018; abstract_plus_structured_extract)
+- [P006 — Effects of Intelligent Notification Management on Users and Their Tasks](./interruptions/P006.md) (2008; structured_extract)
+- [P007 — A Diary Study of Task Switching and Interruptions](./interruptions/P007.md) (2004; structured_extract)
+- [P008 — A POMDP Formulation of Preference Elicitation Problems](./active-elicitation/P008.md) (2002; structured_extract)
+- [P009 — Making Rational Decisions Using Adaptive Utility Elicitation](./active-elicitation/P009.md) (2000; structured_extract)
+- [P010 — Experience Sampling for Building Predictive User Models: A Comparative Study](./attention-learning/P010.md) (2008; structured_extract)
+- [P011 — A Theory of Goal Systems](./goal-systems/P011.md) (2002; structured_extract)
+- [P012 — Forgetting All Else: On the Antecedents and Consequences of Goal Shielding](./goal-systems/P012.md) (2002; structured_extract)
+- [P013 — Adaptive Self-Regulation of Unattainable Goals: Goal Disengagement, Goal Reengagement, and Subjective Well-Being](./goal-adaptation/P013.md) (2003; structured_extract)
+- [P014 — Implementation Intentions and Goal Achievement: A Meta-Analysis of Effects and Processes](./behavior-change/P014.md) (2006; abstract_plus_full_text_available)
+- [P015 — Planning Fallacy Mitigation Strategies in Task Management Apps](./time-planning/P015.md) (2024; structured_extract)
+- [P016 — Little's Law as Viewed on Its 50th Anniversary](./queueing/P016.md) (2011; abstract_plus_structured_extract)
+- [P017 — The Construction of Stable Project Baseline Schedules](./robust-scheduling/P017.md) (2004; structured_extract)
+- [P018 — Proactive and Reactive Strategies for Resource-Constrained Project Scheduling with Uncertain Resource Availabilities](./robust-scheduling/P018.md) (2008; structured_extract)
+- [P019 — Reasoning About Beliefs and Actions Under Computational Resource Constraints](./metareasoning/P019.md) (1987; structured_extract)
+- [P020 — Conservative Contextual Linear Bandits](./conservative-learning/P020.md) (2017; structured_extract)
+- [P021 — Recommendations as Treatments: Debiasing Learning and Evaluation](./counterfactual-learning/P021.md) (2016; abstract_plus_structured_extract)
+- [P022 — HorizonBench: Long-Horizon Personalization with Evolving Preferences](./evolving-memory/P022.md) (2026; abstract_plus_structured_extract)
+- [P023 — From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents](./evolving-memory/P023.md) (2026; public_full_text_available)
+- [P024 — Deskilling and Overreliance: Two Long-Term Risks of AI Assistance, and What Designers Can Do About Them](./human-agency/P024.md) (2026; structured_extract)
+- [P025 — A Meta-Analysis of Self-Determination Theory-Informed Intervention Studies in the Health Domain](./motivation/P025.md) (2021; abstract_plus_structured_extract)
+- [P026 — A Lived Informatics Model of Personal Informatics](./personal-informatics/P026.md) (2015; structured_extract)
+- [P027 — Sagas](./distributed-workflows/P027.md) (1987; abstract_plus_structured_extract)
+- [P028 — SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning](./distributed-workflows/P028.md) (2025; structured_extract)
+- [P029 — LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory](./long-memory-evaluation/P029.md) (2025; abstract_plus_structured_extract)
+- [P030 — Guidelines for Human-AI Interaction](./human-ai-guidelines/P030.md) (2019; abstract_plus_structured_extract)
+- [P031 — Having Lunch Now: Understanding How Users Engage with a Proactive Daily Planning and Reflection Agent](./proactive-agents/P031.md) (2026; structured_extract)
+- [P032 — Does Time Management Work? A Meta-Analysis](./time-management/P032.md) (2021; abstract_plus_structured_extract)
+- [P033 — Beyond Self-Tracking and Reminders: Designing Smartphone Apps That Support Habit Formation](./habit-formation/P033.md) (2015; structured_extract)
+- [P034 — A Stage-Based Model of Personal Informatics Systems](./personal-informatics/P034.md) (2010; abstract_plus_structured_extract)
+- [P035 — Personal Tracking as Lived Informatics](./personal-informatics/P035.md) (2014; structured_extract)
+- [P036 — Taking CSCW Seriously: Supporting Articulation Work](./articulation-work/P036.md) (1992; publisher_abstract_and_excerpts)
+- [P037 — Grounding in Communication](./conversational-grounding/P037.md) (1991; author_chapter_excerpts_bibliographic_record)
+- [P038 — Plans and Situated Actions: The Problem of Human-Machine Communication](./situated-action/P038.md) (1987; publisher_summary_selected_chapter)
+- [P039 — Intention, Plans, and Practical Reason](./intention-philosophy/P039.md) (1987; publisher_description_and_philosophical_overview)
+- [P040 — The Knowledge Pyramid: A Critique of the DIKW Hierarchy](./epistemology/P040.md) (2009; publisher_abstract_institutional_record)
+- [P041 — Why Bother Me Again? Benchmarking Personal Agent Memory for Interaction Preferences](./agent-personalization/P041.md) (2026; project_site_code_results_and_abstract)
+- [P042 — Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](./agent-memory-systems/P042.md) (2026; abstract_only)
+- [P043 — Principles of Mixed-Initiative User Interfaces](./mixed-initiative/P043.md) (1999; publisher_abstract_author_notes)
+- [P044 — On the Logic of Theory Change: Partial Meet Contraction and Revision Functions](./belief-revision/P044.md) (1985; publisher_abstract_and_formal_overview)
+- [P045 — AdaMEM: Test-Time Adaptive Memory for Language Agents](./adaptive-agent-memory/P045.md) (2026; methods_ablation_limitations_html_inspected)
+- [P046 — Beyond Semantic Organization: Memory as Execution State Management for Long-Horizon Agents](./execution-state-memory/P046.md) (2026; arxiv_html_method_experiment_ablation_inspected_peer_review_record_verified)
+- [P047 — Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](./agent-memory-systems/P047.md) (2026; full_html_taxonomy_benchmark_tables_limitations_inspected)
+- [P048 — MemGPT: Towards LLMs as Operating Systems](./context-window-memory/P048.md) (2023; official_abstract_and_project_docs)
+- [P049 — Generative Agents: Interactive Simulacra of Human Behavior](./generative-episodic-memory/P049.md) (2023; publisher_full_abstract_and_author_summary)
+- [P050 — Reflexion: Language Agents with Verbal Reinforcement Learning](./experience-reflection/P050.md) (2023; conference_abstract_and_method_description)
+- [P051 — ExpeL: LLM Agents Are Experiential Learners](./experiential-transfer/P051.md) (2024; official_journal_abstract)
+- [P052 — Voyager: An Open-Ended Embodied Agent with Large Language Models](./skill-library/P052.md) (2024; journal_summary_and_arxiv_abstract)
+- [P053 — A-MEM: Agentic Memory for LLM Agents](./agentic-semantic-memory/P053.md) (2025; conference_abstract_and_project_docs)
+- [P054 — Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](./persistent-llm-memory/P054.md) (2025; author_abstract_and_reported_benchmark)
+- [P055 — Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning](./learned-memory-operations/P055.md) (2026; peer_reviewed_paper_abstract_and_metadata)
+- [P056 — The Episodic Buffer: A New Component of Working Memory?](./cognitive-working-memory/P056.md) (2000; pubmed_abstract_and_tertiary_context)
+- [P057 — Why There Are Complementary Learning Systems in the Hippocampus and Neocortex: Insights from the Successes and Failures of Connectionist Models of Learning and Memory](./complementary-learning/P057.md) (1995; pubmed_abstract_and_foundational_theory)
+- [P058 — Memory-Induced Tool-Drift in LLM Agents](./memory-agent-safety/P058.md) (2026; arxiv_author_abstract)
+- [P059 — The anatomy of a personal health agent](./personal-health-agent/P059.md) (2026; official_open_access_abstract_methods_overview_results_and_limitations_selected)
+- [P060 — A framework for longitudinal health AI agents](./longitudinal-health-agency/P060.md) (2026; pubmed_full_text_pmc_article_selected_substantive_sections)
+- [P061 — Just-in-Time Adaptive Interventions (JITAIs) in Mobile Health: Key Components and Design Principles for Ongoing Health Behavior Support](./adaptive-intervention/P061.md) (2018; open_access_full_text_framework_sections_and_example_rules)
+- [P062 — The behaviour change wheel: A new method for characterising and designing behaviour change interventions](./behavior-change-theory/P062.md) (2011; official_open_access_abstract_method_and_model)
+- [P063 — Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology](./learning-science/P063.md) (2013; publisher_abstract_and_formal_results_overview)
+- [P064 — Distributed practice in verbal recall tasks: A review and quantitative synthesis](./learning-science/P064.md) (2006; pubmed_abstract_and_original_meta_analysis_summary)
+- [P065 — Becoming a Self-Regulated Learner: An Overview](./self-regulated-learning/P065.md) (2002; eric_bibliographic_abstract_and_phase_framework_excerpt)
+- [P066 — GPTCoach: Towards LLM-Based Physical Activity Coaching](./fitness-coaching/P066.md) (2025; acm_open_article_abstract_and_author_pdf_limitations_section)
+- [P067 — AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting](./ai-tutoring-positive-rct/P067.md) (2025; open_access_article_methods_results_discussion_and_limitations_selected)
+- [P068 — The Effects of Course-Integrated AI Tutoring on Student Performance and Engagement: A Randomized University Trial](./ai-tutoring-negative-rct/P068.md) (2026; official_iza_and_edworkingpapers_abstract_and_study_details)
+- [P069 — An expandable approach for design and personalization of digital, just-in-time adaptive interventions](./adaptive-intervention-engineering/P069.md) (2019; open_access_abstract_methods_simulation_results_summary)
+- [P070 — Application of Just-in-Time Adaptive Interventions in Dietary Health Management: Systematic Review](./adaptive-intervention-systematic-review/P070.md) (2026; open_access_registered_systematic_review_abstract_results_selection_and_conclusions)
+- [P071 — Plan or Retrieve First? A Scale Study of Tool Discovery Architectures](./tool-discovery/P071.md) (2026; conference_abstract_and_arxiv_introduction_inspected)
+- [P072 — Tool Recommendation for Multi-Step Agents: Finding Every Tool a Task Needs](./tool-discovery/P072.md) (2026; arxiv_abstract_and_selected_introduction)
+- [P073 — Agent Planning Benchmark: A Diagnostic Framework for Planning Capabilities in LLM Agents](./planning-evaluation/P073.md) (2026; acl_anthology_abstract_and_arxiv_metadata)
+- [P074 — Continual Learning Bench: Evaluating Frontier AI Systems in Real-World Stateful Environments](./continual-learning/P074.md) (2026; arxiv_abstract_and_introduction_html)
+- [P075 — StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance](./future-agent-memory/P075.md) (2026; acl_abstract_and_arxiv_introduction_html)
+- [P076 — Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents](./continual-learning/P076.md) (2026; arxiv_abstract_and_selected_introduction)
+- [P077 — tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](./stateful-tool-use/P077.md) (2024; arxiv_abstract_and_task_example)
+- [P078 — ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities](./stateful-tool-use/P078.md) (2024; arxiv_abstract_and_selected_introduction)
+- [P079 — Agent Lightning: Train ANY AI Agents with Reinforcement Learning](./harness-learning/P079.md) (2025; arxiv_abstract_and_introduction)
+- [P080 — ReAct: Synergizing Reasoning and Acting in Language Models](./reason-act-loop/P080.md) (2023; arxiv_official_abstract_and_conference_metadata)
+- [P081 — SHOP2: An HTN Planning System](./hierarchical-planning/P081.md) (2003; journal_abstract_and_institutional_description)
+- [P082 — Agents' Last Exam](./long-horizon-real-work/P082.md) (2026; arxiv_abstract_and_project_overview)
+
+[Source catalog](../papers/catalog.json) | [Backbone analysis](../docs/backbone/00-practical-intelligence-architecture.md)
