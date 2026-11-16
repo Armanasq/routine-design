@@ -1136,7 +1136,7 @@
       "license_verified": false,
       "review": "literature-reviews/tool-discovery/P071.md",
       "source": "papers/tool-discovery/P071/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M29 M33",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1152,7 +1152,7 @@
       "license_verified": false,
       "review": "literature-reviews/tool-discovery/P072.md",
       "source": "papers/tool-discovery/P072/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M29 M33",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1168,7 +1168,7 @@
       "license_verified": false,
       "review": "literature-reviews/planning-evaluation/P073.md",
       "source": "papers/planning-evaluation/P073/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M29 M30 M31",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1184,7 +1184,7 @@
       "license_verified": false,
       "review": "literature-reviews/continual-learning/P074.md",
       "source": "papers/continual-learning/P074/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M32 M34",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1200,7 +1200,7 @@
       "license_verified": false,
       "review": "literature-reviews/future-agent-memory/P075.md",
       "source": "papers/future-agent-memory/P075/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M32 M34",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1216,7 +1216,7 @@
       "license_verified": false,
       "review": "literature-reviews/continual-learning/P076.md",
       "source": "papers/continual-learning/P076/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M32 M34",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1232,7 +1232,7 @@
       "license_verified": false,
       "review": "literature-reviews/stateful-tool-use/P077.md",
       "source": "papers/stateful-tool-use/P077/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M31",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1248,7 +1248,7 @@
       "license_verified": false,
       "review": "literature-reviews/stateful-tool-use/P078.md",
       "source": "papers/stateful-tool-use/P078/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M30 M31",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1264,7 +1264,7 @@
       "license_verified": false,
       "review": "literature-reviews/harness-learning/P079.md",
       "source": "papers/harness-learning/P079/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M32",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1280,7 +1280,7 @@
       "license_verified": false,
       "review": "literature-reviews/reason-act-loop/P080.md",
       "source": "papers/reason-act-loop/P080/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M29 M30",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1296,7 +1296,7 @@
       "license_verified": false,
       "review": "literature-reviews/hierarchical-planning/P081.md",
       "source": "papers/hierarchical-planning/P081/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M30",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     },
     {
@@ -1312,7 +1312,7 @@
       "license_verified": false,
       "review": "literature-reviews/long-horizon-real-work/P082.md",
       "source": "papers/long-horizon-real-work/P082/SOURCE.md",
-      "mechanisms": "M29 M30 M31 M32 M33 M34",
+      "mechanisms": "M34",
       "verification": "primary_details_partially_checked_full_text_audit_required"
     }
   ]

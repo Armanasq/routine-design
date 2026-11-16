@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "kind": "evidence_to_decision_not_empirical_proof",
+  "papers": [
+    {
+      "id": "P071",
+      "mechanisms": [
+        "M29",
+        "M33"
+      ],
+      "review": "literature-reviews/tool-discovery/P071.md"
+    },
+    {
+      "id": "P072",
+      "mechanisms": [
+        "M29",
+        "M33"
+      ],
+      "review": "literature-reviews/tool-discovery/P072.md"
+    },
+    {
+      "id": "P073",
+      "mechanisms": [
+        "M29",
+        "M30",
+        "M31"
+      ],
+      "review": "literature-reviews/planning-evaluation/P073.md"
+    },
+    {
+      "id": "P074",
+      "mechanisms": [
+        "M32",
+        "M34"
+      ],
+      "review": "literature-reviews/continual-learning/P074.md"
+    },
+    {
+      "id": "P075",
+      "mechanisms": [
+        "M32",
+        "M34"
+      ],
+      "review": "literature-reviews/future-agent-memory/P075.md"
+    },
+    {
+      "id": "P076",
+      "mechanisms": [
+        "M32",
+        "M34"
+      ],
+      "review": "literature-reviews/continual-learning/P076.md"
+    },
+    {
+      "id": "P077",
+      "mechanisms": [
+        "M31"
+      ],
+      "review": "literature-reviews/stateful-tool-use/P077.md"
+    },
+    {
+      "id": "P078",
+      "mechanisms": [
+        "M30",
+        "M31"
+      ],
+      "review": "literature-reviews/stateful-tool-use/P078.md"
+    },
+    {
+      "id": "P079",
+      "mechanisms": [
+        "M32"
+      ],
+      "review": "literature-reviews/harness-learning/P079.md"
+    },
+    {
+      "id": "P080",
+      "mechanisms": [
+        "M29",
+        "M30"
+      ],
+      "review": "literature-reviews/reason-act-loop/P080.md"
+    },
+    {
+      "id": "P081",
+      "mechanisms": [
+        "M30"
+      ],
+      "review": "literature-reviews/hierarchical-planning/P081.md"
+    },
+    {
+      "id": "P082",
+      "mechanisms": [
+        "M34"
+      ],
+      "review": "literature-reviews/long-horizon-real-work/P082.md"
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "M29",
+      "paperIds": [
+        "P071",
+        "P072",
+        "P073",
+        "P080"
+      ],
+      "decision": "Adaptive tool retrieval and abstract capability grounding",
+      "spec": "docs/backbone/02-dynamic-tool-discovery.md",
+      "tests": [
+        "test_new_tool_enables_previous_impossible_goal",
+        "test_untrusted_tool_excluded",
+        "test_registry_change_blocks_dispatch"
+      ]
+    },
+    {
+      "id": "M30",
+      "paperIds": [
+        "P073",
+        "P078",
+        "P080",
+        "P081"
+      ],
+      "decision": "Goal-to-effect operator composition",
+      "spec": "docs/backbone/03-adaptive-planning-and-control.md",
+      "tests": [
+        "test_unseen_domain_composes_tools",
+        "test_multiple_goals_share_preparation",
+        "test_missing_precondition_never_assumed"
+      ]
+    },
+    {
+      "id": "M31",
+      "paperIds": [
+        "P073",
+        "P077",
+        "P078"
+      ],
+      "decision": "Actual state, authorization and unknown-side-effect separation",
+      "spec": "docs/backbone/05-durable-execution-and-unknown-outcomes.md",
+      "tests": [
+        "test_external_effect_requires_grant",
+        "test_source_stale_blocks_dispatch",
+        "test_provider_prediction_not_verified_outcome"
+      ]
+    },
+    {
+      "id": "M32",
+      "paperIds": [
+        "P074",
+        "P075",
+        "P076",
+        "P079"
+      ],
+      "decision": "Later-task benefit of retained experience",
+      "spec": "docs/backbone/04-experience-and-continual-learning.md",
+      "tests": [],
+      "unimplemented": "real streaming episode learning and later-task generalization benchmark"
+    },
+    {
+      "id": "M33",
+      "paperIds": [
+        "P071",
+        "P072",
+        "P047",
+        "P019"
+      ],
+      "decision": "Cost/budget-aware discovery and reasoning",
+      "spec": "docs/backbone/03-adaptive-planning-and-control.md",
+      "tests": [
+        "test_allows_less_costly_path",
+        "test_state_budget_exhaustion_is_not_infeasibility"
+      ]
+    },
+    {
+      "id": "M34",
+      "paperIds": [
+        "P074",
+        "P075",
+        "P076",
+        "P082"
+      ],
+      "decision": "Held-out domain goals and human outcome verification",
+      "spec": "docs/backbone/08-research-and-acceptance-benchmarks.md",
+      "tests": [
+        "test_unseen_subdomain_works_without_category"
+      ],
+      "unimplemented": "human longitudinal field tests and independent outcome oracles"
+    }
+  ]
+}
