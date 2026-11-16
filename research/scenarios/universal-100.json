@@ -1,0 +1,1791 @@
+{
+  "version": 1,
+  "as_of": "2026-11-16",
+  "status": "synthetic_seed_not_implemented_workflow",
+  "purpose": "open_world_generalization_evaluation_not_features",
+  "count": 100,
+  "categories": [
+    {
+      "id": "01-intentions-and-everyday",
+      "title": "Understanding vague intentions and everyday needs",
+      "count": 6
+    },
+    {
+      "id": "02-work-and-time",
+      "title": "Work, commitments, attention, and time",
+      "count": 6
+    },
+    {
+      "id": "03-communication",
+      "title": "Communication and relationships",
+      "count": 6
+    },
+    {
+      "id": "04-learning",
+      "title": "Education, learning, and skill development",
+      "count": 6
+    },
+    {
+      "id": "05-research-and-engineering",
+      "title": "Research, engineering, and complex intellectual work",
+      "count": 6
+    },
+    {
+      "id": "06-career-and-applications",
+      "title": "Career, applications, and development",
+      "count": 6
+    },
+    {
+      "id": "07-health-navigation",
+      "title": "Health information and care coordination",
+      "count": 6
+    },
+    {
+      "id": "08-fitness",
+      "title": "Gym, sports, and physical training",
+      "count": 6
+    },
+    {
+      "id": "09-wellbeing-and-growth",
+      "title": "Wellbeing, habits, and personal growth",
+      "count": 6
+    },
+    {
+      "id": "10-family-and-relationships",
+      "title": "Family, friendship, and shared responsibilities",
+      "count": 6
+    },
+    {
+      "id": "11-home-and-administration",
+      "title": "Home, maintenance, and personal administration",
+      "count": 6
+    },
+    {
+      "id": "12-finance-and-paperwork",
+      "title": "Finance, paperwork, and obligations",
+      "count": 6
+    },
+    {
+      "id": "13-travel-and-relocation",
+      "title": "Travel, relocation, and mobility",
+      "count": 6
+    },
+    {
+      "id": "14-business-and-creativity",
+      "title": "Entrepreneurship, creativity, and independent projects",
+      "count": 6
+    },
+    {
+      "id": "15-unfamiliar-domains",
+      "title": "Unusual, emerging, or unseen situations",
+      "count": 8
+    },
+    {
+      "id": "16-cross-domain",
+      "title": "Complex cross-domain situations",
+      "count": 8
+    }
+  ],
+  "cases": [
+    {
+      "id": "R001",
+      "category": "01-intentions-and-everyday",
+      "utterance": "Organize my life.",
+      "expected_reasoning": "Discover commitments and goals gradually rather than demand a complete initial configuration.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R002",
+      "category": "01-intentions-and-everyday",
+      "utterance": "What should I do now?",
+      "expected_reasoning": "Choose an actionable next step using time, consequence, attention, and stated goals.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R003",
+      "category": "01-intentions-and-everyday",
+      "utterance": "I don't know where to start.",
+      "expected_reasoning": "Identify missing dependencies and the smallest productive decision.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R004",
+      "category": "01-intentions-and-everyday",
+      "utterance": "Take care of this.",
+      "expected_reasoning": "Resolve the reference, understand the requested outcome, and distinguish preparation from authorized execution.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R005",
+      "category": "01-intentions-and-everyday",
+      "utterance": "I want to change something.",
+      "expected_reasoning": "Clarify the desired outcome without manufacturing a standing commitment.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R006",
+      "category": "01-intentions-and-everyday",
+      "utterance": "You know how I like things.",
+      "expected_reasoning": "Apply only current, scoped, evidence-backed preferences.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R007",
+      "category": "02-work-and-time",
+      "utterance": "An unexpected meeting appears.",
+      "expected_reasoning": "Reassess capacity, preparation, current agreements, and alternative times.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R008",
+      "category": "02-work-and-time",
+      "utterance": "A project deadline moves.",
+      "expected_reasoning": "Update the affected dependency subgraph without full schedule thrashing.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R009",
+      "category": "02-work-and-time",
+      "utterance": "I repeatedly underestimate work.",
+      "expected_reasoning": "Calibrate duration uncertainty using actual comparable outcomes.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R010",
+      "category": "02-work-and-time",
+      "utterance": "An important task remains untouched.",
+      "expected_reasoning": "Investigate blockers and feasibility rather than reflexively remind.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R011",
+      "category": "02-work-and-time",
+      "utterance": "An unexpected free afternoon appears.",
+      "expected_reasoning": "Compare meaningful progress, preparation, and protected recovery.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R012",
+      "category": "02-work-and-time",
+      "utterance": "Several tasks become urgent together.",
+      "expected_reasoning": "Assess consequences and negotiate infeasible obligations.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R013",
+      "category": "03-communication",
+      "utterance": "Reply to this email.",
+      "expected_reasoning": "Use correct thread, audience, purpose, tone, and operation authority.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R014",
+      "category": "03-communication",
+      "utterance": "A colleague stops replying.",
+      "expected_reasoning": "Check expected reply and current source coverage before follow-up.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R015",
+      "category": "03-communication",
+      "utterance": "A disagreement develops over messages.",
+      "expected_reasoning": "Detect ungrounded interpretations and suggest a repair question.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R016",
+      "category": "03-communication",
+      "utterance": "A contact prefers concise updates.",
+      "expected_reasoning": "Learn a context-specific interaction hypothesis without globalizing it.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R017",
+      "category": "03-communication",
+      "utterance": "A promise was made during a conversation.",
+      "expected_reasoning": "Differentiate reported promise, proposed commitment, acceptance, and fulfillment.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R018",
+      "category": "03-communication",
+      "utterance": "A long-standing relationship becomes inactive.",
+      "expected_reasoning": "Consider relevant user-declared relational goals without unauthorized outreach.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R019",
+      "category": "04-learning",
+      "utterance": "Teach me Python.",
+      "expected_reasoning": "Assess skill and develop a changing practice-based learning strategy.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R020",
+      "category": "04-learning",
+      "utterance": "I am repeatedly stuck on one concept.",
+      "expected_reasoning": "Revise prerequisites, teaching approach, and assessment.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R021",
+      "category": "04-learning",
+      "utterance": "An exam is approaching.",
+      "expected_reasoning": "Budget realistic practice and prioritize uncertainty and independent performance.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R022",
+      "category": "04-learning",
+      "utterance": "I learned something but am forgetting it.",
+      "expected_reasoning": "Schedule context-appropriate retrieval without interrupting critical commitments.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R023",
+      "category": "04-learning",
+      "utterance": "I want to become a better researcher.",
+      "expected_reasoning": "Help build methodological practice and evidence-based reflection over time.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R024",
+      "category": "04-learning",
+      "utterance": "I alternate between learning and delegation.",
+      "expected_reasoning": "Infer the current assistance mode cautiously; avoid replacing intended practice.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R025",
+      "category": "05-research-and-engineering",
+      "utterance": "Investigate this technical problem.",
+      "expected_reasoning": "Form hypotheses, gather evidence, compare methods, and design tests.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R026",
+      "category": "05-research-and-engineering",
+      "utterance": "An experiment gives surprising results.",
+      "expected_reasoning": "Revise the working theory rather than rationalize its failure.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R027",
+      "category": "05-research-and-engineering",
+      "utterance": "I must review hundreds of papers.",
+      "expected_reasoning": "Track provenance, conflicting findings, coverage, and unsolved questions.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R028",
+      "category": "05-research-and-engineering",
+      "utterance": "A software project repeatedly breaks similarly.",
+      "expected_reasoning": "Compile verified diagnostic procedures with applicability conditions.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R029",
+      "category": "05-research-and-engineering",
+      "utterance": "I discovered a promising research idea.",
+      "expected_reasoning": "Check prior art, novelty, assumptions, and discriminating experiments.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R030",
+      "category": "05-research-and-engineering",
+      "utterance": "A project changes direction halfway.",
+      "expected_reasoning": "Preserve valid subgoals and revise affected strategies.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R031",
+      "category": "06-career-and-applications",
+      "utterance": "Find a fully funded PhD.",
+      "expected_reasoning": "Verify official eligibility, supervisors, funding, deadlines, and dependencies.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R032",
+      "category": "06-career-and-applications",
+      "utterance": "An application deadline changes.",
+      "expected_reasoning": "Reconcile source authority and reforecast the preparation plan.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R033",
+      "category": "06-career-and-applications",
+      "utterance": "A reference letter is delayed.",
+      "expected_reasoning": "Track the expected handoff and appropriate authorized follow-up.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R034",
+      "category": "06-career-and-applications",
+      "utterance": "I received a job offer.",
+      "expected_reasoning": "Compare user-defined trade-offs, uncertainty, and professional goals.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R035",
+      "category": "06-career-and-applications",
+      "utterance": "I am preparing for an interview.",
+      "expected_reasoning": "Adapt practice to evidence of performance and specific competency gaps.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R036",
+      "category": "06-career-and-applications",
+      "utterance": "My career priorities changed.",
+      "expected_reasoning": "Replan while preserving transferable skills and prior progress.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R037",
+      "category": "07-health-navigation",
+      "utterance": "Help me prepare for my doctor.",
+      "expected_reasoning": "Organize consented data, questions, and appointment logistics.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R038",
+      "category": "07-health-navigation",
+      "utterance": "Medical appointments overlap with work.",
+      "expected_reasoning": "Coordinate availability without disclosing private clinical details.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R039",
+      "category": "07-health-navigation",
+      "utterance": "I have a complex clinician-provided schedule.",
+      "expected_reasoning": "Organize the existing plan; do not alter treatment autonomously.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R040",
+      "category": "07-health-navigation",
+      "utterance": "A medical report lacks information.",
+      "expected_reasoning": "Identify missing units or evidence and avoid unsupported diagnosis.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R041",
+      "category": "07-health-navigation",
+      "utterance": "Help me understand health trends.",
+      "expected_reasoning": "Separate measurements, interpretation uncertainty, and clinical boundaries.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R042",
+      "category": "07-health-navigation",
+      "utterance": "I report an urgent concerning symptom.",
+      "expected_reasoning": "Prioritize appropriate professional/emergency guidance over ordinary task optimization.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R043",
+      "category": "08-fitness",
+      "utterance": "Help me get back to the gym.",
+      "expected_reasoning": "Assess user-stated goals, opportunity, constraints, and schedule feasibility.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R044",
+      "category": "08-fitness",
+      "utterance": "Work repeatedly disrupts workouts.",
+      "expected_reasoning": "Vary times or means without declaring fitness goal abandoned.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R045",
+      "category": "08-fitness",
+      "utterance": "I want to train for a marathon.",
+      "expected_reasoning": "Coordinate selected training and recovery with commitments and safety constraints.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R046",
+      "category": "08-fitness",
+      "utterance": "I reported a new injury.",
+      "expected_reasoning": "Invalidate stale readiness assumptions; avoid unsafe automatic progression.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R047",
+      "category": "08-fitness",
+      "utterance": "My activity routine becomes sustainable.",
+      "expected_reasoning": "Reduce prompts rather than maximizing engagement.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R048",
+      "category": "08-fitness",
+      "utterance": "I switched sports.",
+      "expected_reasoning": "Transfer scheduling insight but require new sport-specific evidence.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R049",
+      "category": "09-wellbeing-and-growth",
+      "utterance": "I am overwhelmed by everything.",
+      "expected_reasoning": "Reduce avoidable demands, identify negotiable obligations, and preserve agency.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R050",
+      "category": "09-wellbeing-and-growth",
+      "utterance": "I want a better sleep routine.",
+      "expected_reasoning": "Coordinate chosen evening limits without diagnosing sleep conditions.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R051",
+      "category": "09-wellbeing-and-growth",
+      "utterance": "My new habit repeatedly fails.",
+      "expected_reasoning": "Distinguish opportunity, skill, values, and current feasibility.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R052",
+      "category": "09-wellbeing-and-growth",
+      "utterance": "I want a better life balance.",
+      "expected_reasoning": "Ask what balance means to the user before asserting a global utility ranking.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R053",
+      "category": "09-wellbeing-and-growth",
+      "utterance": "My personal goal has been neglected.",
+      "expected_reasoning": "Protect chosen capacity without paternalistically deprioritizing work.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R054",
+      "category": "09-wellbeing-and-growth",
+      "utterance": "I need a temporary break.",
+      "expected_reasoning": "Suspend nonessential prompting while keeping essential responsibilities visible.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R055",
+      "category": "10-family-and-relationships",
+      "utterance": "A family member needs help.",
+      "expected_reasoning": "Coordinate authorized practical support while respecting third-party privacy.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R056",
+      "category": "10-family-and-relationships",
+      "utterance": "Two family commitments conflict.",
+      "expected_reasoning": "Identify accepted agreements, owners, and safe alternatives.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R057",
+      "category": "10-family-and-relationships",
+      "utterance": "I want more time with children.",
+      "expected_reasoning": "Preserve chosen family time despite opportunistic work requests.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R058",
+      "category": "10-family-and-relationships",
+      "utterance": "Household responsibilities keep being missed.",
+      "expected_reasoning": "Investigate ownership and dependencies instead of assigning blame.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R059",
+      "category": "10-family-and-relationships",
+      "utterance": "I am organizing a celebration.",
+      "expected_reasoning": "Coordinate parties, venues, replies, budgets, and verification.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R060",
+      "category": "10-family-and-relationships",
+      "utterance": "Someone else's plans suddenly change.",
+      "expected_reasoning": "Revise affected handoffs only after checking their agreement.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R061",
+      "category": "11-home-and-administration",
+      "utterance": "An appliance suddenly breaks.",
+      "expected_reasoning": "Investigate, compare repair routes, and coordinate service.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R062",
+      "category": "11-home-and-administration",
+      "utterance": "A household repair keeps failing.",
+      "expected_reasoning": "Reuse previous diagnostic evidence without repeating failed steps.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R063",
+      "category": "11-home-and-administration",
+      "utterance": "I am moving to another home.",
+      "expected_reasoning": "Compose utilities, transport, documents, inventory, and dates.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R064",
+      "category": "11-home-and-administration",
+      "utterance": "My warranty is nearly over.",
+      "expected_reasoning": "Identify eligible evidence and prepare a documented claim.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R065",
+      "category": "11-home-and-administration",
+      "utterance": "Household spending is unpredictable.",
+      "expected_reasoning": "Reconcile bills and identify supported discrepancies.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R066",
+      "category": "11-home-and-administration",
+      "utterance": "A seasonal responsibility returns.",
+      "expected_reasoning": "Reuse verified procedures while rechecking current circumstances.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R067",
+      "category": "12-finance-and-paperwork",
+      "utterance": "A bill is due.",
+      "expected_reasoning": "Check status and prepare payment without assuming money-movement authority.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R068",
+      "category": "12-finance-and-paperwork",
+      "utterance": "A subscription appears unused.",
+      "expected_reasoning": "Present verified renewal and usage evidence before cancellation.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R069",
+      "category": "12-finance-and-paperwork",
+      "utterance": "I need to prepare tax documents.",
+      "expected_reasoning": "Organize current requirements and source records without inventing legal advice.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R070",
+      "category": "12-finance-and-paperwork",
+      "utterance": "An insurance claim is disputed.",
+      "expected_reasoning": "Preserve evidence and monitor authoritative response and appeal states.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R071",
+      "category": "12-finance-and-paperwork",
+      "utterance": "A recurring expense changes unexpectedly.",
+      "expected_reasoning": "Verify the cause before recommending a response.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R072",
+      "category": "12-finance-and-paperwork",
+      "utterance": "I want to reduce administrative spending.",
+      "expected_reasoning": "Respect declared trade-offs without making unrestricted payments or cancellations.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R073",
+      "category": "13-travel-and-relocation",
+      "utterance": "My flight was cancelled.",
+      "expected_reasoning": "Find feasible alternatives and identify downstream affected commitments.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R074",
+      "category": "13-travel-and-relocation",
+      "utterance": "I travel frequently.",
+      "expected_reasoning": "Learn scoped preferences while revalidating prices and requirements.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R075",
+      "category": "13-travel-and-relocation",
+      "utterance": "I am applying for a visa.",
+      "expected_reasoning": "Track official requirements, expiry, and appointments without promising approval.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R076",
+      "category": "13-travel-and-relocation",
+      "utterance": "An unexpected urgent trip arises.",
+      "expected_reasoning": "Identify critical constraints, dependencies, and delegated tasks.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R077",
+      "category": "13-travel-and-relocation",
+      "utterance": "I am relocating internationally.",
+      "expected_reasoning": "Compose housing, employment, healthcare navigation, family, and paperwork.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R078",
+      "category": "13-travel-and-relocation",
+      "utterance": "My arrival time changed.",
+      "expected_reasoning": "Repair dependent schedules without silently changing valid reservations.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R079",
+      "category": "14-business-and-creativity",
+      "utterance": "I have a business idea.",
+      "expected_reasoning": "Develop hypotheses and design the smallest credible validation test.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R080",
+      "category": "14-business-and-creativity",
+      "utterance": "My first market hypothesis failed.",
+      "expected_reasoning": "Update evidence and propose discriminating experiments.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R081",
+      "category": "14-business-and-creativity",
+      "utterance": "I want to publish creative work regularly.",
+      "expected_reasoning": "Calibrate realistic capacity instead of enforcing engagement streaks.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R082",
+      "category": "14-business-and-creativity",
+      "utterance": "A product receives contradictory feedback.",
+      "expected_reasoning": "Distinguish segments and evidence rather than average incompatible values.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R083",
+      "category": "14-business-and-creativity",
+      "utterance": "My side project competes with employment.",
+      "expected_reasoning": "Respect chosen constraints, recovery and time uncertainty.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R084",
+      "category": "14-business-and-creativity",
+      "utterance": "My creative project is blocked.",
+      "expected_reasoning": "Identify whether evidence, skills, resources or decisions are missing.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R085",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I want to start beekeeping.",
+      "expected_reasoning": "Discover specialist requirements while handling general coordination.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R086",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I want to restore an old motorcycle.",
+      "expected_reasoning": "Compose research, parts, repair dependencies, budgets, and safety.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R087",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I am organizing a scientific expedition.",
+      "expected_reasoning": "Coordinate experts, permits, transport, resources, and contingency.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R088",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I want to join citizen science.",
+      "expected_reasoning": "Find protocols, train required skills, and verify observations.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R089",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I want to preserve my family's history.",
+      "expected_reasoning": "Plan interviews, consent, archival provenance, and preservation.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R090",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I am building a home robotics laboratory.",
+      "expected_reasoning": "Coordinate research, compatible equipment, experiments, and safety.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R091",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I want to establish a community initiative.",
+      "expected_reasoning": "Discover stakeholders, commitments, funding, and governance.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R092",
+      "category": "15-unfamiliar-domains",
+      "utterance": "I have a problem you've never encountered.",
+      "expected_reasoning": "Ground an unknown goal in observable requirements and safe capabilities.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R093",
+      "category": "16-cross-domain",
+      "utterance": "Exam plus work emergency plus gym.",
+      "expected_reasoning": "Reallocate capacity while preserving chosen goals and accepted duties.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R094",
+      "category": "16-cross-domain",
+      "utterance": "New job plus relocation plus family.",
+      "expected_reasoning": "Reconcile linked commitments and changing constraints.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R095",
+      "category": "16-cross-domain",
+      "utterance": "Illness plus deadlines plus travel.",
+      "expected_reasoning": "Recognize uncertainty and avoid medical competence claims.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R096",
+      "category": "16-cross-domain",
+      "utterance": "PhD applications plus publishing plus employment.",
+      "expected_reasoning": "Coordinate cross-project documents, references, and deadlines.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R097",
+      "category": "16-cross-domain",
+      "utterance": "Unexpected expense plus vacation.",
+      "expected_reasoning": "Present user-defined financial trade-offs and avoid unilateral booking changes.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R098",
+      "category": "16-cross-domain",
+      "utterance": "Family emergency plus professional commitments.",
+      "expected_reasoning": "Protect urgent personal needs and prepare justified work coordination.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R099",
+      "category": "16-cross-domain",
+      "utterance": "Automation saves time but causes overload.",
+      "expected_reasoning": "Detect rebound, update admission policy without silently changing values.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    },
+    {
+      "id": "R100",
+      "category": "16-cross-domain",
+      "utterance": "All of my priorities changed.",
+      "expected_reasoning": "Revise long-term goals without erasing verified experience or prior agreements.",
+      "scenario_kind": "evaluation_seed_not_hardcoded_runtime",
+      "perturbations": [
+        "ambiguous_intent",
+        "changed_preference",
+        "missing_or_revoked_tool",
+        "stale_source",
+        "competing_goal",
+        "unknown_domain",
+        "unverified_effect",
+        "context_shift"
+      ]
+    }
+  ]
+}
