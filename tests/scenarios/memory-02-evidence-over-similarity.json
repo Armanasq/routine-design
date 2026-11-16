@@ -1,0 +1,30 @@
+{
+  "id": "memory-02-evidence-over-similarity",
+  "synthetic": true,
+  "description": "Mandatory source and grant survive a tight token window",
+  "events": [
+    {
+      "step": 1,
+      "statement": "retrieve semantically relevant but obsolete preference"
+    },
+    {
+      "step": 2,
+      "statement": "retrieve mandatory grant and current deadline under low token budget"
+    },
+    {
+      "step": 3,
+      "statement": "context selection cannot fit mandatory items"
+    }
+  ],
+  "assertions": [
+    "stale memory is not current",
+    "never truncate hard constraints for budget",
+    "capsule status insufficient_budget or missing_evidence",
+    "never execute without grant"
+  ],
+  "source_papers": [
+    "P046",
+    "P047",
+    "P048"
+  ]
+}

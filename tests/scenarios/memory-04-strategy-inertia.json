@@ -1,0 +1,30 @@
+{
+  "id": "memory-04-strategy-inertia",
+  "synthetic": true,
+  "description": "A failing strategy must be refreshed by independent evidence, not self-reassurance",
+  "events": [
+    {
+      "step": 1,
+      "statement": "start plan with valid preconditions"
+    },
+    {
+      "step": 2,
+      "statement": "observe repeated no progress and invalid tool response"
+    },
+    {
+      "step": 3,
+      "statement": "agent self-evaluation claims strategy remains valid"
+    }
+  ],
+  "assertions": [
+    "independent strategy monitor invalidates plan",
+    "failed branch quarantined",
+    "preserve verified unaffected subgoals",
+    "no duplicate external effect"
+  ],
+  "source_papers": [
+    "P045",
+    "P046",
+    "P027"
+  ]
+}

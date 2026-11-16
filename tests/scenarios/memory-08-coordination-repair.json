@@ -1,0 +1,30 @@
+{
+  "id": "memory-08-coordination-repair",
+  "synthetic": true,
+  "description": "Agent must distinguish message delivery from mutual agreement",
+  "events": [
+    {
+      "step": 1,
+      "statement": "user approves request to propose an alternative meeting"
+    },
+    {
+      "step": 2,
+      "statement": "provider confirms email submitted"
+    },
+    {
+      "step": 3,
+      "statement": "counterparty does not yet respond"
+    }
+  ],
+  "assertions": [
+    "communication is submitted not agreed",
+    "responsibility remains awaiting_external",
+    "source freshness checked before absence inference",
+    "no false completion"
+  ],
+  "source_papers": [
+    "P036",
+    "P037",
+    "P046"
+  ]
+}

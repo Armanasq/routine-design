@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DecisionContextCapsule",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "state_version",
+    "assembled_at",
+    "budget_tokens",
+    "required_evidence",
+    "required_constraints",
+    "status",
+    "policy_version"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string"
+    },
+    "state_version": {
+      "type": "string"
+    },
+    "assembled_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "budget_tokens": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "required_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "included_optional_memories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "excluded_memories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_coverage": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "ready",
+        "missing_evidence",
+        "insufficient_budget",
+        "permission_blocked",
+        "source_stale"
+      ]
+    },
+    "estimated_tokens": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "authorization_snapshot_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

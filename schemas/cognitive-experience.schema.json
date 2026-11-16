@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExperienceEpisode",
+  "type": "object",
+  "required": [
+    "id",
+    "responsibility_id",
+    "initial_state_version",
+    "decision_id",
+    "action_spec_ref",
+    "outcome_state",
+    "observations",
+    "recorded_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "responsibility_id": {
+      "type": "string"
+    },
+    "initial_state_version": {
+      "type": "string"
+    },
+    "decision_id": {
+      "type": "string"
+    },
+    "action_spec_ref": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action_effects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provider_receipt_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verified_postcondition_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outcome_state": {
+      "enum": [
+        "verified_success",
+        "verified_failure",
+        "partial",
+        "unverified",
+        "unknown"
+      ]
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "correction_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "causal_attribution": {
+      "enum": [
+        "unknown",
+        "hypothesized",
+        "experimentally_supported"
+      ]
+    },
+    "source_coverage_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grant_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "diagnostic_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

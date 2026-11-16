@@ -18,10 +18,10 @@ Its success metric is real-world administrative burden **avoided** without incre
 6. [Hypotheses](research/hypotheses.md), [evaluation](research/evaluation.md), [research backlog](research/backlog.md) and [phased roadmap](research/roadmap.md).
 
 ## Corpus status
-- **44 individually indexed critical reviews**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
-- **44 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
-- **9 cross-paper syntheses** in `literature-reviews/syntheses/`.
-- **16 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
+- **58 individually indexed critical reviews**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
+- **58 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
+- **15 cross-paper syntheses** in `literature-reviews/syntheses/`.
+- **22 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
 - Prior research and two historical graphs in [research/historical](research/historical/README.md).
 - **Full-text PDFs/TeX in repository: 0.** Download from canonical links only after redistribution rights are verified. This environment did not support binary acquisition. See [source-acquisition policy](papers/acquisition.md) and [acquisition script](scripts/acquire_open_sources.py). Never call a link-only record a downloaded paper.
 - Individual reviews are structured critical analyses based on available abstracts and/or scholarly extractions, not verified exhaustive full-text reads. More rigorous full-text critical reviews are a tracked research priority.
@@ -70,3 +70,11 @@ Nine additional sources P036–P044 cover social articulation, grounding, situat
 **Local validation:** python -m unittest discover -s tests -v ; python scripts/verify_corpus.py ; python scripts/validate_architecture.py. No paid CI workflow is configured.
 
 **Open limitations:** no in-repository original paper PDFs/TeX, no full-text scientific audit of all 44 papers, no real-world Routin performance evidence, and no genuine external-action backend.
+
+## Cognitive architecture research (16 November 2026)
+
+A deeper evidence-to-action program is now documented in [docs/cognitive/](docs/cognitive/00-research-thesis.md): working/context/window memory, episodic/semantic/prospective/procedural memory, metacognitive strategy refresh, experience-to-procedure certification, slow preference consolidation, memory cost constraints, goal-preserving adaptation and a synthetic end-to-end scenario.
+
+The corresponding [58-paper corpus](literature-reviews/README.md) includes AdaMEM, MAGE, Agent Memory, MemGPT, Memory-R1, ExpeL, Reflexion, Voyager, A-MEM, Mem0 and cognitive memory theory. [22 mechanisms](research/knowledge-map.json) are connected to [decision contracts and adversarial scenarios](research/cognitive-traceability.json). None of these research ideas is a verified production contribution or measured user outcome.
+
+New typed JSON [memory/procedure/context schemas](schemas/) and 8 synthetic [cognitive scenarios](tests/scenarios/) specify engineering gates. They are test fixtures, not an implemented cognitive agent; the original 26 deterministic reference-kernel tests remain a separate earlier verification result.

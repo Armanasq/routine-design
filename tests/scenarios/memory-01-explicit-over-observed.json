@@ -1,0 +1,34 @@
+{
+  "id": "memory-01-explicit-over-observed",
+  "synthetic": true,
+  "description": "Late-night work observations cannot override an explicit user constraint",
+  "events": [
+    {
+      "step": 1,
+      "statement": "observe repeated late meetings"
+    },
+    {
+      "step": 2,
+      "statement": "receive explicit no-meeting-after-18 user preference"
+    },
+    {
+      "step": 3,
+      "statement": "receive a proposed 20:00 meeting"
+    },
+    {
+      "step": 4,
+      "statement": "compile current context"
+    }
+  ],
+  "assertions": [
+    "explicit time constraint remains current",
+    "proposed meeting is not accepted",
+    "old late behavior is descriptive only",
+    "no ungranted external message"
+  ],
+  "source_papers": [
+    "P039",
+    "P041",
+    "P057"
+  ]
+}

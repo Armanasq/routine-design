@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CognitiveMemoryRecord",
+  "type": "object",
+  "required": [
+    "id",
+    "owner_id",
+    "class",
+    "source_ids",
+    "scope",
+    "recorded_at",
+    "valid_from",
+    "status",
+    "epistemic_origin",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "class": {
+      "enum": [
+        "source",
+        "working",
+        "session",
+        "episodic",
+        "semantic",
+        "prospective",
+        "procedural",
+        "meta"
+      ]
+    },
+    "scope": {
+      "type": "object"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "derives_from": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valid_until": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "epistemic_origin": {
+      "enum": [
+        "observed",
+        "inferred",
+        "explicit",
+        "confirmed",
+        "derived",
+        "simulation"
+      ]
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "current",
+        "disputed",
+        "quarantined",
+        "superseded",
+        "expired",
+        "revoked",
+        "deleted"
+      ]
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "content_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "consent_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retention_policy_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,34 @@
+{
+  "id": "memory-07-revoked-source",
+  "synthetic": true,
+  "description": "Revoking a connected source must invalidate dependent beliefs and cached context",
+  "events": [
+    {
+      "step": 1,
+      "statement": "derive preference from connected app data"
+    },
+    {
+      "step": 2,
+      "statement": "cache into semantic and context stores"
+    },
+    {
+      "step": 3,
+      "statement": "user revokes source permission"
+    },
+    {
+      "step": 4,
+      "statement": "request decision that used derived preference"
+    }
+  ],
+  "assertions": [
+    "derived current belief blocked pending lawful retention conditions",
+    "cached context invalidated",
+    "permission revocation overrides memory freshness",
+    "action abstains or uses independent evidence"
+  ],
+  "source_papers": [
+    "P047",
+    "P055",
+    "P058"
+  ]
+}

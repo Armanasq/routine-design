@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-11-16",
+  "note": "Research hypotheses and design contracts, not implementation certifications.",
+  "mechanisms": [
+    {
+      "mechanism": "M17",
+      "decision": "Decision context selection",
+      "spec": "docs/cognitive/02-working-context-compiler.md",
+      "contract": "schemas/cognitive-context-capsule.schema.json",
+      "tests": [
+        "memory-02-evidence-over-similarity",
+        "memory-07-revoked-source"
+      ],
+      "paper_ids": [
+        "P046",
+        "P047",
+        "P048",
+        "P056"
+      ]
+    },
+    {
+      "mechanism": "M18",
+      "decision": "Strategy validity/refresh",
+      "spec": "docs/cognitive/04-metacognition-and-strategy-control.md",
+      "contract": "schemas/cognitive-strategy-state.schema.json",
+      "tests": [
+        "memory-04-strategy-inertia",
+        "memory-08-coordination-repair"
+      ],
+      "paper_ids": [
+        "P045",
+        "P046",
+        "P027"
+      ]
+    },
+    {
+      "mechanism": "M19",
+      "decision": "Verified procedure certification",
+      "spec": "docs/cognitive/03-experience-to-procedure.md",
+      "contract": "schemas/cognitive-procedure.schema.json",
+      "tests": [
+        "memory-03-bad-procedure-transfer",
+        "memory-06-security-sensitive-drift"
+      ],
+      "paper_ids": [
+        "P050",
+        "P051",
+        "P052",
+        "P058"
+      ]
+    },
+    {
+      "mechanism": "M20",
+      "decision": "Consolidation of episodic to semantic claims",
+      "spec": "docs/cognitive/01-memory-ontology-and-lifecycle.md",
+      "contract": "schemas/cognitive-memory-record.schema.json",
+      "tests": [
+        "memory-01-explicit-over-observed",
+        "memory-05-fast-slow-learning"
+      ],
+      "paper_ids": [
+        "P049",
+        "P055",
+        "P057"
+      ]
+    },
+    {
+      "mechanism": "M21",
+      "decision": "Cost-aware memory maintenance",
+      "spec": "docs/cognitive/01-memory-ontology-and-lifecycle.md",
+      "contract": "schemas/cognitive-memory-record.schema.json",
+      "tests": [
+        "memory-02-evidence-over-similarity"
+      ],
+      "paper_ids": [
+        "P047",
+        "P053",
+        "P055"
+      ]
+    },
+    {
+      "mechanism": "M22",
+      "decision": "Agency-aware longitudinal adaptation",
+      "spec": "docs/cognitive/05-agency-personal-growth.md",
+      "contract": "schemas/cognitive-experience.schema.json",
+      "tests": [
+        "memory-01-explicit-over-observed",
+        "memory-05-fast-slow-learning"
+      ],
+      "paper_ids": [
+        "P041",
+        "P057",
+        "P024"
+      ]
+    }
+  ]
+}

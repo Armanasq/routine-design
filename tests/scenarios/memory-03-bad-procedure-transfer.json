@@ -1,0 +1,34 @@
+{
+  "id": "memory-03-bad-procedure-transfer",
+  "synthetic": true,
+  "description": "A previously successful email workflow is not valid for a different recipient or revoked grant",
+  "events": [
+    {
+      "step": 1,
+      "statement": "store verified success episode"
+    },
+    {
+      "step": 2,
+      "statement": "derive procedural candidate"
+    },
+    {
+      "step": 3,
+      "statement": "change grant and target recipient"
+    },
+    {
+      "step": 4,
+      "statement": "attempt to reuse candidate procedure"
+    }
+  ],
+  "assertions": [
+    "procedure applicability fails or permission denies",
+    "prior success does not grant authority",
+    "no external send",
+    "record negative transfer diagnostic"
+  ],
+  "source_papers": [
+    "P051",
+    "P052",
+    "P058"
+  ]
+}

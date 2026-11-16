@@ -1,0 +1,34 @@
+{
+  "id": "memory-05-fast-slow-learning",
+  "synthetic": true,
+  "description": "A temporary routine exception must not become a permanent preference",
+  "events": [
+    {
+      "step": 1,
+      "statement": "record explicit weekly practice goal"
+    },
+    {
+      "step": 2,
+      "statement": "observe one disrupted week"
+    },
+    {
+      "step": 3,
+      "statement": "store episodic exception"
+    },
+    {
+      "step": 4,
+      "statement": "run semantic consolidation"
+    }
+  ],
+  "assertions": [
+    "goal remains current",
+    "one-off exception retains scope",
+    "no generalized dislike-of-study preference",
+    "future scheduling still respects protected time"
+  ],
+  "source_papers": [
+    "P049",
+    "P057",
+    "P023"
+  ]
+}

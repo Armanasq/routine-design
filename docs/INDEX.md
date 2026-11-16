@@ -29,3 +29,16 @@ A proposed operation is not approved by a paper. A mechanism requires the source
 
 ## Implementation status
 Research and architecture are partially specified and evolving. The Python reference kernel executes **deterministic examples only**. No user integration, LLM runtime, PWA interface or autonomous production workflow is implemented. Original paper full-text acquisition is incomplete.
+
+## Cognitive and memory engineering
+
+- [Cognitive research thesis](cognitive/00-research-thesis.md)
+- [Memory hierarchy, temporal scope and retention](cognitive/01-memory-ontology-and-lifecycle.md)
+- [Bounded working context compilation](cognitive/02-working-context-compiler.md)
+- [Verified experience-to-procedure learning](cognitive/03-experience-to-procedure.md)
+- [Strategy validity, meta-reasoning and selective repair](cognitive/04-metacognition-and-strategy-control.md)
+- [Human agency and long-horizon personal growth](cognitive/05-agency-personal-growth.md)
+- [Integrated end-to-end reasoning case](cognitive/06-end-to-end-case-and-failure-tree.md)
+- [Ablations, falsification and evaluation](cognitive/07-cognitive-research-evaluation.md)
+- [Candidate scientific contributions](../research/proposed-contributions-2026.md)
+- [Cognitive source-to-contract traceability](../research/cognitive-traceability.json)

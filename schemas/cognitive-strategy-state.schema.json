@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StrategyState",
+  "type": "object",
+  "required": [
+    "strategy_id",
+    "responsibility_id",
+    "state_version",
+    "valid_from",
+    "precondition_evidence",
+    "subgoal_states",
+    "policy_version",
+    "status"
+  ],
+  "properties": {
+    "strategy_id": {
+      "type": "string"
+    },
+    "responsibility_id": {
+      "type": "string"
+    },
+    "state_version": {
+      "type": "string"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "precondition_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subgoal_states": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "dependency_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_verified_progress_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "invalidating_observations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "needs_review",
+        "stale",
+        "quarantined",
+        "completed"
+      ]
+    },
+    "evidence_snapshot_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approval_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

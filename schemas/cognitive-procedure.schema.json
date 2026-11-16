@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LearnedProcedure",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "state",
+    "applicability",
+    "inapplicability",
+    "required_authorization",
+    "proposed_steps",
+    "verifiers",
+    "supporting_episode_ids",
+    "last_reviewed_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "state": {
+      "enum": [
+        "candidate",
+        "shadow",
+        "certified",
+        "suspended",
+        "quarantined",
+        "retired"
+      ]
+    },
+    "applicability": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inapplicability": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_authorization": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proposed_steps": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "verifiers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "supporting_episode_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "negative_episode_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_injection_suite_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_failure_rate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evaluated_episode_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "last_reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "grant_is_live_checked": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}
