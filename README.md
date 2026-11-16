@@ -18,10 +18,10 @@ Its success metric is real-world administrative burden **avoided** without incre
 6. [Hypotheses](research/hypotheses.md), [evaluation](research/evaluation.md), [research backlog](research/backlog.md) and [phased roadmap](research/roadmap.md).
 
 ## Corpus status
-- **35 individually reviewed papers**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
-- **35 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
+- **44 individually indexed critical reviews**, each with a dedicated review in `literature-reviews/<field>/Pxxx.md`.
+- **44 source records** in `papers/<field>/Pxxx/SOURCE.md`; machine-readable [catalog](papers/catalog.json).
 - **9 cross-paper syntheses** in `literature-reviews/syntheses/`.
-- **12 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
+- **16 evidence-linked mechanism specifications**, [knowledge graph](research/knowledge-map.json).
 - Prior research and two historical graphs in [research/historical](research/historical/README.md).
 - **Full-text PDFs/TeX in repository: 0.** Download from canonical links only after redistribution rights are verified. This environment did not support binary acquisition. See [source-acquisition policy](papers/acquisition.md) and [acquisition script](scripts/acquire_open_sources.py). Never call a link-only record a downloaded paper.
 - Individual reviews are structured critical analyses based on available abstracts and/or scholarly extractions, not verified exhaustive full-text reads. More rigorous full-text critical reviews are a tracked research priority.
@@ -51,3 +51,6 @@ No GitHub Actions workflows were configured, to avoid unwanted CI charges. Chang
 
 ## Development principle
 **Maximize verified backend usefulness, minimize required human attention.** Do not implement the UI before the decision policy and information output contract are stable. See [contribution guide](CONTRIBUTING.md).
+
+## Deepening: epistemic and coordination research
+Nine additional sources P036–P044 cover social articulation, grounding, situated action, practical intention, belief revision, information-science epistemology, and recent 2026 personalization evidence. See [formal specifications](docs/formal/) and [research method](research/brick-by-brick-method.md).

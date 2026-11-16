@@ -1,26 +1,32 @@
-# Literature review index
+# Paper review index
 
-Research corpus as of 2026-11-16: **35 individually reviewed items**, **0 acquired full-text copies**. Some full texts are publicly accessible through source links but have not been downloaded or licensed for republication here.
-
-**Integrity:** `abstract_plus_structured_extract` is not full-text verification. Reviews are critical design-oriented readings, with limits and experimental questions; they must not be treated as systematic evidence synthesis.
+**44 indexed critical reviews**. This is a structured scoping collection, not a full-text systematic review. No original paper files have been lawfully acquired in-repo yet. Each review declares source access, assumptions and status.
 
 ## Categories
 - active-elicitation: 2
+- agent-memory-systems: 1
+- agent-personalization: 1
+- articulation-work: 1
 - attention-learning: 1
 - behavior-change: 1
+- belief-revision: 1
 - conservative-learning: 1
+- conversational-grounding: 1
 - counterfactual-learning: 1
 - distributed-cognition: 1
 - distributed-workflows: 2
+- epistemology: 1
 - evolving-memory: 2
 - goal-adaptation: 1
 - goal-systems: 2
 - habit-formation: 1
 - human-agency: 1
 - human-ai-guidelines: 1
+- intention-philosophy: 1
 - interruptions: 3
 - long-memory-evaluation: 1
 - metareasoning: 1
+- mixed-initiative: 1
 - motivation: 1
 - personal-informatics: 3
 - proactive-agents: 1
@@ -28,11 +34,12 @@ Research corpus as of 2026-11-16: **35 individually reviewed items**, **0 acquir
 - queueing: 1
 - robust-scheduling: 2
 - secretarial: 1
+- situated-action: 1
 - team-coordination: 1
 - time-management: 1
 - time-planning: 1
 
-## Review list
+## Papers
 - [P001 — Assistance: The Work Practices of Human Administrative Assistants and Their Implications for IT and Organizations](./secretarial/P001.md) (2008; abstract_plus_prior_full_text_extract)
 - [P002 — Distributed Cognition: Toward a New Foundation for Human-Computer Interaction Research](./distributed-cognition/P002.md) (2000; public_full_text_available)
 - [P003 — Team Implicit Coordination Processes: A Team Knowledge-Based Approach](./team-coordination/P003.md) (2008; abstract_plus_structured_extract)
@@ -68,5 +75,12 @@ Research corpus as of 2026-11-16: **35 individually reviewed items**, **0 acquir
 - [P033 — Beyond Self-Tracking and Reminders: Designing Smartphone Apps That Support Habit Formation](./habit-formation/P033.md) (2015; structured_extract)
 - [P034 — A Stage-Based Model of Personal Informatics Systems](./personal-informatics/P034.md) (2010; abstract_plus_structured_extract)
 - [P035 — Personal Tracking as Lived Informatics](./personal-informatics/P035.md) (2014; structured_extract)
-
-For source records and acquisition status, see [paper catalog](../papers/catalog.json). Cross-paper reasoning is documented in [syntheses](./syntheses/).
+- [P036 — Taking CSCW Seriously: Supporting Articulation Work](./articulation-work/P036.md) (1992; publisher_abstract_and_excerpts)
+- [P037 — Grounding in Communication](./conversational-grounding/P037.md) (1991; author_chapter_excerpts_bibliographic_record)
+- [P038 — Plans and Situated Actions: The Problem of Human-Machine Communication](./situated-action/P038.md) (1987; publisher_summary_selected_chapter)
+- [P039 — Intention, Plans, and Practical Reason](./intention-philosophy/P039.md) (1987; publisher_description_and_philosophical_overview)
+- [P040 — The Knowledge Pyramid: A Critique of the DIKW Hierarchy](./epistemology/P040.md) (2009; publisher_abstract_institutional_record)
+- [P041 — Why Bother Me Again? Benchmarking Personal Agent Memory for Interaction Preferences](./agent-personalization/P041.md) (2026; project_site_code_results_and_abstract)
+- [P042 — Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](./agent-memory-systems/P042.md) (2026; abstract_only)
+- [P043 — Principles of Mixed-Initiative User Interfaces](./mixed-initiative/P043.md) (1999; publisher_abstract_author_notes)
+- [P044 — On the Logic of Theory Change: Partial Meet Contraction and Revision Functions](./belief-revision/P044.md) (1985; publisher_abstract_and_formal_overview)

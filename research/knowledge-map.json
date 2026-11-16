@@ -211,6 +211,75 @@
         "critical omissions",
         "attention burden"
       ]
+    },
+    {
+      "id": "M13",
+      "name": "Grounded social coordination",
+      "papers": [
+        "P001",
+        "P036",
+        "P037",
+        "P043"
+      ],
+      "outputs": [
+        "grounding evidence",
+        "mutual agreement state"
+      ],
+      "tests": [
+        "premature agreement",
+        "unnecessary recipient effort"
+      ]
+    },
+    {
+      "id": "M14",
+      "name": "Intention and partial-plan coherence",
+      "papers": [
+        "P011",
+        "P038",
+        "P039"
+      ],
+      "outputs": [
+        "intention vs desire vs proposal",
+        "revisable means"
+      ],
+      "tests": [
+        "false commitment",
+        "goal displacement"
+      ]
+    },
+    {
+      "id": "M15",
+      "name": "Preference retrieval selection and realization",
+      "papers": [
+        "P023",
+        "P041",
+        "P042"
+      ],
+      "outputs": [
+        "scoped policy selection",
+        "behavior enforcement"
+      ],
+      "tests": [
+        "context overspill",
+        "unnecessary clarifications"
+      ]
+    },
+    {
+      "id": "M16",
+      "name": "Fallible epistemic revision",
+      "papers": [
+        "P023",
+        "P040",
+        "P044"
+      ],
+      "outputs": [
+        "typed evidence promotions",
+        "contradiction revision"
+      ],
+      "tests": [
+        "stale knowledge",
+        "unearned authority"
+      ]
     }
   ],
   "connections": [
@@ -263,6 +332,26 @@
       "from": "M09",
       "to": "M04",
       "why": "learning intentions require user action, not maximal delegation"
+    },
+    {
+      "from": "M13",
+      "to": "M11",
+      "why": "provider delivery is not mutual agreement"
+    },
+    {
+      "from": "M14",
+      "to": "M05",
+      "why": "admission must preserve accepted ends and social commitments"
+    },
+    {
+      "from": "M15",
+      "to": "M12",
+      "why": "preference retrieval requires behavioral enforcement"
+    },
+    {
+      "from": "M16",
+      "to": "M08",
+      "why": "belief revision precedes similarity retrieval"
     }
   ]
 }
