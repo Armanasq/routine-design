@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AdaptiveGoalContract",
+  "type": "object",
+  "required": [
+    "id",
+    "principal_id",
+    "normative_status",
+    "desired_effects",
+    "support_mode",
+    "evidence_ids",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "principal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "normative_status": {
+      "enum": [
+        "proposed",
+        "confirmed",
+        "paused",
+        "withdrawn",
+        "superseded"
+      ]
+    },
+    "desired_effects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "support_mode": {
+      "enum": [
+        "delegate",
+        "collaborate",
+        "learn_practice",
+        "support_coach",
+        "observe"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "resource_requirements": {
+      "type": "object"
+    },
+    "due_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "outcome_verifier_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "accepted_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data_purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "uncertainty_items": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}

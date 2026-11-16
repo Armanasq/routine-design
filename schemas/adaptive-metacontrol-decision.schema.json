@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AdaptiveMetaControlDecision",
+  "type": "object",
+  "required": [
+    "id",
+    "goal_id",
+    "world_revision",
+    "policy_version",
+    "options_considered",
+    "chosen",
+    "source_health",
+    "permission_state"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "world_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "options_considered": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "direct",
+          "retrieve",
+          "abstract_plan",
+          "research",
+          "ask",
+          "prepare",
+          "request_approval",
+          "execute",
+          "verify",
+          "replan",
+          "noop",
+          "abstain"
+        ]
+      }
+    },
+    "chosen": {
+      "enum": [
+        "direct",
+        "retrieve",
+        "abstract_plan",
+        "research",
+        "ask",
+        "prepare",
+        "request_approval",
+        "execute",
+        "verify",
+        "replan",
+        "noop",
+        "abstain"
+      ]
+    },
+    "source_health": {
+      "enum": [
+        "fresh",
+        "stale",
+        "gap",
+        "revoked",
+        "unknown"
+      ]
+    },
+    "permission_state": {
+      "enum": [
+        "granted",
+        "missing",
+        "revoked",
+        "not_applicable"
+      ]
+    },
+    "justification_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "last_safe_time": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "unresolved_unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "compute_budget": {
+      "type": "object"
+    },
+    "human_attention_budget": {
+      "type": "object"
+    },
+    "expected_intervention_effect": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "risk_gate_result": {
+      "enum": [
+        "pass",
+        "approval_required",
+        "specialist_required",
+        "blocked",
+        "not_applicable"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

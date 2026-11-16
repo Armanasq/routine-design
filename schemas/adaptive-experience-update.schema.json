@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AdaptiveExperienceUpdate",
+  "type": "object",
+  "required": [
+    "id",
+    "episode_id",
+    "goal_id",
+    "policy_version",
+    "observations",
+    "outcome_state",
+    "source_coverage",
+    "learning_state",
+    "recorded_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_coverage": {
+      "type": "object"
+    },
+    "candidate_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "selected_action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "outcome_state": {
+      "enum": [
+        "verified_success",
+        "verified_failure",
+        "partial",
+        "unknown"
+      ]
+    },
+    "verification_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "user_corrections": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "feedback_exposure_record": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "learning_state": {
+      "enum": [
+        "candidate",
+        "shadow",
+        "validated",
+        "promoted",
+        "quarantined",
+        "rejected",
+        "reverted"
+      ]
+    },
+    "proposed_scope": {
+      "type": "object"
+    },
+    "counterexamples": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "actual_tool_effects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "causal_attribution": {
+      "enum": [
+        "unknown",
+        "hypothesis",
+        "experimentally_supported"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

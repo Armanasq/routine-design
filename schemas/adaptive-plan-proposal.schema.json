@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AdaptivePlanProposal",
+  "type": "object",
+  "required": [
+    "id",
+    "goal_contract_id",
+    "world_revision",
+    "registry_revision",
+    "status",
+    "steps",
+    "predicted_effects",
+    "unverified_effects",
+    "authorization_checked"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal_contract_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "world_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "satisfied",
+        "planned",
+        "approval_required",
+        "missing_capability",
+        "missing_evidence",
+        "search_exhausted",
+        "infeasible",
+        "abstain"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "operator_ref",
+          "precondition_refs"
+        ],
+        "properties": {
+          "operator_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "precondition_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "requires_grants": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "effect_verifier_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "approval_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "predicted_effects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unverified_effects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "missing_grants": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "authorization_checked": {
+      "type": "boolean"
+    },
+    "required_user_decisions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_snapshot": {
+      "type": "string",
+      "minLength": 1
+    },
+    "compute_budget": {
+      "type": "object"
+    },
+    "risk_gate_result": {
+      "enum": [
+        "allowed",
+        "approval_needed",
+        "blocked",
+        "not_evaluated"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
